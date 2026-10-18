@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.userlabs.xshare.views.XLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textDirection="locale"
+    android:layoutDirection="locale">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/show_error_log_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/next_log"
+            android:layout_marginEnd="@dimen/x_dp_16"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clear_error_log_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/clear_log"
+            android:layout_marginEnd="@dimen/x_dp_16"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textColor="@color/txt_primary"
+        android:id="@+id/log_content"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</com.userlabs.xshare.views.XLinearLayout>

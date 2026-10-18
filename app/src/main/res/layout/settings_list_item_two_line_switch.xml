@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/selector_list_item"
+    android:paddingLeft="@dimen/x_dp_16"
+    android:paddingRight="@dimen/x_dp_16"
+    android:clickable="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/x_dp_64"
+    android:paddingHorizontal="@dimen/x_dp_16">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/cx_sp_15"
+        android:textColor="@color/txt_primary"
+        android:id="@+id/two_line_switch_title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textDirection="locale"
+        android:layout_marginEnd="@dimen/x_dp_16"
+        app:layout_constraintBottom_toTopOf="@+id/two_line_switch_des_tv"
+        app:layout_constraintEnd_toStartOf="@+id/two_line_switch_sw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/xshare_text_size_small"
+        android:textColor="@color/txt_secondary"
+        android:id="@+id/two_line_switch_des_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x_dp_5"
+        android:textDirection="locale"
+        android:layout_marginEnd="@dimen/x_dp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/two_line_switch_sw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/two_line_switch_title_tv"
+        style="@style/title_text_style_roboto_font"/>
+    <com.userlabs.xshare.views.swbtn.SwitchButton
+        android:id="@+id/two_line_switch_sw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/MaterialDesign_settings_SwitchButton"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

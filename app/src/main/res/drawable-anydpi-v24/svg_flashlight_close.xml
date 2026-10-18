@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="50dp"
+    android:width="50dp"
+    android:viewportWidth="150"
+    android:viewportHeight="150">
+    <path
+        android:fillColor="#999999"
+        android:pathData="M75,75m-75,0a75,75 0,1 1,150 0a75,75 0,1 1,-150 0"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M64,78.29C64,78.11 63.91,77.93 63.76,77.82C56.36,72.27 52,63.55 52,54.29L52,51L97,51L97,54.29C97,63.55 92.64,72.27 85.24,77.82C85.09,77.93 85,78.11 85,78.29L85,111L64,111L64,78.29Z"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="6"
+        android:strokeLineJoin="round"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M95.5,61.5L53.5,61.5"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M74.5,87.01L74.5,93.01"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M64,78L64,78C56.45,72.33 52,63.44 52,54L52,51"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M97,51L97,54C97,63.44 92.55,72.33 85,78L85,78"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillType="evenOdd"/>
+</vector>

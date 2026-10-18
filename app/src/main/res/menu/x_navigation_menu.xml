@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/x_svg_navi_bottom_music"
+        android:id="@+id/x_navigation_player"
+        android:title="@string/x_bottom_tab_music"/>
+    <item
+        android:icon="@drawable/x_svg_navi_bottom_video"
+        android:id="@+id/x_navigation_video_ai"
+        android:title="@string/x_bottom_tab_video_ai"/>
+    <item
+        android:icon="@null"
+        android:id="@+id/x_navigation_transfer"
+        android:title="@null"/>
+    <item
+        android:icon="@drawable/x_svg_navi_bottom_photo"
+        android:id="@+id/x_navigation_photo_ai"
+        android:title="@string/x_bottom_tab_photo_ai"/>
+    <item
+        android:icon="@drawable/x_svg_navi_bottom_social"
+        android:id="@+id/x_navigation_social"
+        android:title="@string/x_bottom_tab_social"/>
+</menu>

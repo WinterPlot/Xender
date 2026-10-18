@@ -1,0 +1,32 @@
+package com.google.zxing.common.detector;
+
+/* JADX INFO: compiled from: r8-map-id-7c39405478b97556541940d8ec6ed68be9fb10fdbac58530bd0e41fdc7ed0e30 */
+/* JADX INFO: loaded from: classes4.dex */
+public final class a {
+    private a() {
+    }
+
+    public static float distance(float f, float f2, float f3, float f4) {
+        double d = f - f3;
+        double d2 = f2 - f4;
+        return (float) Math.sqrt((d2 * d2) + (d * d));
+    }
+
+    public static int round(float f) {
+        return (int) (f + (f < 0.0f ? -0.5f : 0.5f));
+    }
+
+    public static int sum(int[] iArr) {
+        int i = 0;
+        for (int i2 : iArr) {
+            i += i2;
+        }
+        return i;
+    }
+
+    public static float distance(int i, int i2, int i3, int i4) {
+        double d = i - i3;
+        double d2 = i2 - i4;
+        return (float) Math.sqrt((d2 * d2) + (d * d));
+    }
+}

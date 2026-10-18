@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.userlabs.xshare.views.XFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/playlist_toolbar_layout"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pl_opt_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/x_dp_48"
+        android:layout_marginBottom="@dimen/x_dp_54"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_window_1_color_with_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x_dp_54"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/xshare_text_size_large"
+            android:textColor="@color/txt_primary"
+            android:id="@+id/pl_opt_add_to_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x_dp_24"
+            android:layout_marginRight="@dimen/x_dp_24"
+            android:text="@string/x_play_list_add"
+            android:drawableStart="@drawable/svg_playlist_add"
+            android:drawableTint="@color/x_222_or_fff"
+            android:layout_marginHorizontal="@dimen/x_dp_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/pl_opt_delete"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/xshare_text_size_large"
+            android:textColor="@color/txt_primary"
+            android:id="@+id/pl_opt_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x_dp_24"
+            android:layout_marginRight="@dimen/x_dp_24"
+            android:text="@string/x_play_songs_delete"
+            android:drawableStart="@drawable/svg_ic_delete"
+            android:drawableTint="@color/x_222_or_fff"
+            android:layout_marginHorizontal="@dimen/x_dp_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pl_opt_add_to_list"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.userlabs.xshare.views.XFrameLayout>

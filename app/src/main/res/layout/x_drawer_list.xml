@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/x_drawer_language_layer"/>
+    <include layout="@layout/x_drawer_settings_layer"/>
+    <include layout="@layout/x_drawer_obb_layer"/>
+    <include layout="@layout/x_drawer_xiaomi_layer"/>
+    <include layout="@layout/x_drawer_rate_layer"/>
+    <include layout="@layout/x_drawer_help_layer"/>
+    <include layout="@layout/x_drawer_about_layer"/>
+    <include layout="@layout/x_drawer_rcmd_layer"/>
+</LinearLayout>

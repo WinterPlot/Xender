@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" app:startDestination="@+id/file_home_fragment">
+    <fragment
+        android:label="file"
+        android:name="com.userlabs.xshare.ui.fragment.res.FileHomeFragment"
+        android:id="@+id/file_home_fragment"/>
+    <fragment
+        android:label="search"
+        android:name="com.userlabs.xshare.ui.fragment.res.FileSearchFragment"
+        android:id="@+id/file_search_fragment">
+        <action
+            android:id="@+id/file_search_to_dir"
+            app:destination="@+id/file_dir_fragment"
+            app:popUpTo="@+id/file_home_fragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <fragment
+        android:label="cate"
+        android:name="com.userlabs.xshare.ui.fragment.res.FileCateFragment"
+        android:id="@+id/file_cate_fragment">
+        <action
+            android:id="@+id/file_cate_to_dir"
+            app:destination="@+id/file_dir_fragment"
+            app:popUpTo="@+id/file_home_fragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <fragment
+        android:label="dir"
+        android:name="com.userlabs.xshare.ui.fragment.res.FileDirFragment"
+        android:id="@+id/file_dir_fragment">
+        <action
+            android:id="@+id/file_dir_to_dir"
+            app:destination="@+id/file_dir_fragment"
+            app:popUpTo="@+id/file_home_fragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+</navigation>

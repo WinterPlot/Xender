@@ -1,0 +1,11 @@
+package androidx.camera.core;
+
+/* JADX INFO: compiled from: r8-map-id-7c39405478b97556541940d8ec6ed68be9fb10fdbac58530bd0e41fdc7ed0e30 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract /* synthetic */ class w1 {
+    public static final /* synthetic */ int a = 0;
+
+    static {
+        x1 x1Var = x1.a;
+    }
+}

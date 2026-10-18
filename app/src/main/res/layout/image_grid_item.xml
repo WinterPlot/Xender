@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.userlabs.xshare.views.XSquareConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="visible"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_icon_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_checked_shadow"
+        android:background="@color/mask_shadow"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.userlabs.xshare.views.XCheckBox
+        android:id="@+id/cb_image_check"
+        android:paddingTop="0dp"
+        android:paddingBottom="16dp"
+        android:duplicateParentState="false"
+        android:layout_width="@dimen/x_dp_52"
+        android:layout_height="@dimen/x_dp_52"
+        android:scaleType="center"
+        android:paddingStart="@dimen/x_dp_3"
+        android:paddingEnd="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_badge_new"
+        android:visibility="visible"
+        android:layout_width="@dimen/x_dp_20"
+        android:layout_height="@dimen/x_dp_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</com.userlabs.xshare.views.XSquareConstraintLayout>

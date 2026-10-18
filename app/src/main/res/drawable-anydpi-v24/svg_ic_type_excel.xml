@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="56dp"
+    android:width="56dp"
+    android:viewportWidth="168"
+    android:viewportHeight="168">
+    <path
+        android:fillColor="@drawable/_svg_ic_type_excel__0_res_0x7f08002c"
+        android:pathData="M24,0L144,0C157.25,0 168,10.75 168,24L168,45.82L168,144C168,157.25 157.25,168 144,168L24,168C10.75,168 0,157.25 0,144L0,24C0,10.75 10.75,0 24,0"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M84,76.58L61.73,54.3C59.68,52.25 56.35,52.25 54.3,54.3C52.25,56.35 52.25,59.68 54.3,61.73L76.58,84L54.3,106.28C52.25,108.33 52.25,111.65 54.3,113.7C55.29,114.69 56.62,115.24 58.01,115.24C59.41,115.24 60.74,114.69 61.73,113.7L84,91.43L106.27,113.7C107.26,114.69 108.59,115.24 109.99,115.24C111.38,115.24 112.71,114.69 113.7,113.7C115.75,111.65 115.75,108.33 113.7,106.28L91.42,84L113.7,61.73C115.75,59.68 115.75,56.35 113.7,54.3C111.65,52.25 108.32,52.25 106.27,54.3L84,76.58Z"
+        android:fillType="evenOdd"/>
+</vector>

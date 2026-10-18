@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" app:startDestination="@+id/x_pc_navi_connect_fragment">
+    <fragment
+        android:label="@null"
+        android:name="com.userlabs.xshare.ui.fragment.pc.PcConnectFragment"
+        android:id="@+id/x_pc_navi_connect_fragment">
+        <action
+            android:id="@+id/pc_connect_2_capture"
+            app:destination="@+id/x_pc_navi_capture_fragment"/>
+        <action
+            android:id="@+id/pc_connect_2_connect_success"
+            app:destination="@+id/x_pc_navi_connect_success_fragment"/>
+    </fragment>
+    <fragment
+        android:label="@null"
+        android:name="com.userlabs.xshare.ui.fragment.scanQRCode.CaptureFragment"
+        android:id="@+id/x_pc_navi_capture_fragment">
+        <action
+            android:id="@+id/capture_2_connect_success"
+            app:destination="@+id/x_pc_navi_connect_success_fragment"
+            app:popUpTo="@+id/x_pc_navi_capture_fragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:label="@null"
+        android:name="com.userlabs.xshare.ui.fragment.pc.PcConnectSuccessFragment"
+        android:id="@+id/x_pc_navi_connect_success_fragment"/>
+</navigation>

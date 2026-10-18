@@ -1,0 +1,17 @@
+package com.google.android.play.core.hsdp.protocol;
+
+import android.os.Bundle;
+import android.os.IInterface;
+import android.os.RemoteException;
+
+/* JADX INFO: compiled from: r8-map-id-7c39405478b97556541940d8ec6ed68be9fb10fdbac58530bd0e41fdc7ed0e30 */
+/* JADX INFO: loaded from: classes5.dex */
+public interface c extends IInterface {
+    void zzc(Bundle bundle) throws RemoteException;
+
+    void zzd(Bundle bundle, e eVar) throws RemoteException;
+
+    void zze(Bundle bundle) throws RemoteException;
+
+    void zzf(Bundle bundle, e eVar) throws RemoteException;
+}

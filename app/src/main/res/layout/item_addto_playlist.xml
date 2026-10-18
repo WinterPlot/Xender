@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x_dp_80">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/item_addto_playlist_iv"
+        android:layout_width="@dimen/x_dp_56"
+        android:layout_height="@dimen/x_dp_56"
+        android:layout_marginStart="@dimen/x_dp_16"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/item_addto_playlist_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/x_dp_10"
+        style="@style/BottomSheetDialog_Text"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

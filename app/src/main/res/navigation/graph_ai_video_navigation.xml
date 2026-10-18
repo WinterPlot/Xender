@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" app:startDestination="@+id/x_ai_video_time_fragment">
+    <fragment
+        android:label="video_ai_sort_time"
+        android:name="com.userlabs.xshare.ui.fragment.videoai.VAIAllVideoFragment"
+        android:id="@+id/x_ai_video_time_fragment">
+        <action
+            android:id="@+id/x_ai_video_time_to_search_fragment"
+            app:destination="@+id/x_ai_video_search_fragment"/>
+    </fragment>
+    <fragment
+        android:label="v_search"
+        android:name="com.userlabs.xshare.ui.fragment.videoai.VAIVideoSearchFragment"
+        android:id="@+id/x_ai_video_search_fragment"/>
+</navigation>

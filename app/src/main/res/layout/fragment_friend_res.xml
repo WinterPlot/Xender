@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.userlabs.xshare.views.XLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:fitsSystemWindows="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/transfer_total_title"/>
+    <include layout="@layout/transfer_total_progress"/>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_gravity="center"
+        android:id="@+id/progress_tabs"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x_dp_40"
+        app:tabGravity="center"
+        app:tabIndicator="@drawable/bg_tab_indicator_fixed"
+        app:tabIndicatorColor="@color/x_white"
+        app:tabIndicatorFullWidth="false"
+        app:tabMinWidth="80dp"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="@dimen/x_dp_16"
+        app:tabSelectedTextColor="@color/tab_color_selected"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@color/tab_color_normal"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/res_view_pager"
+        android:persistentDrawingCache="animation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:flipInterval="30"/>
+</com.userlabs.xshare.views.XLinearLayout>

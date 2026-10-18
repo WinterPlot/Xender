@@ -1,0 +1,20 @@
+package com.google.zxing;
+
+/* JADX INFO: compiled from: r8-map-id-7c39405478b97556541940d8ec6ed68be9fb10fdbac58530bd0e41fdc7ed0e30 */
+/* JADX INFO: loaded from: classes4.dex */
+public enum ResultMetadataType {
+    OTHER,
+    ORIENTATION,
+    BYTE_SEGMENTS,
+    ERROR_CORRECTION_LEVEL,
+    ERRORS_CORRECTED,
+    ERASURES_CORRECTED,
+    ISSUE_NUMBER,
+    SUGGESTED_PRICE,
+    POSSIBLE_COUNTRY,
+    UPC_EAN_EXTENSION,
+    PDF417_EXTRA_METADATA,
+    STRUCTURED_APPEND_SEQUENCE,
+    STRUCTURED_APPEND_PARITY,
+    SYMBOLOGY_IDENTIFIER
+}

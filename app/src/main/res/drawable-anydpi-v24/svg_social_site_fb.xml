@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="40dp"
+    android:width="40dp"
+    android:autoMirrored="true"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <path
+        android:fillColor="@drawable/_svg_social_site_fb__0_res_0x7f08003a"
+        android:pathData="M21.68,14L78.32,14A7.68,7.68 0,0 1,86 21.68L86,78.32A7.68,7.68 0,0 1,78.32 86L21.68,86A7.68,7.68 0,0 1,14 78.32L14,21.68A7.68,7.68 0,0 1,21.68 14z"
+        android:fillType="nonZero"/>
+    <path
+        android:fillColor="#fff"
+        android:pathData="M54.47,59.76h8.85l1.33,-10.23h-10.17v-6.52c0,-2.97 0.82,-4.97 5.1,-4.97L65,38.04v-9.14c-0.94,-0.13 -4.18,-0.41 -7.93,-0.41 -7.85,0 -13.2,4.77 -13.2,13.5v7.54L35,49.54v10.23h8.87L43.87,86h10.6L54.47,59.76Z"
+        android:fillType="nonZero"/>
+    <path
+        android:fillColor="#ff8000"
+        android:pathData="M80,80m-16.5,0a16.5,16.5 0,1 1,33 0a16.5,16.5 0,1 1,-33 0"
+        android:strokeColor="#fffffc"
+        android:strokeWidth="3"
+        android:fillType="nonZero"/>
+    <path
+        android:fillColor="#fffffe"
+        android:pathData="M86.09,77.67H83.32v-5.92a0.75,0.75 0,0 0,-0.75 -0.75H77.13a0.75,0.75 0,0 0,-0.75 0.75v5.92h-2.77a0.75,0.75 0,0 0,-0.52 1.29l6.24,5.99a0.75,0.75 0,0 0,1.04 0l6.24,-5.99a0.75,0.75 0,0 0,-0.52 -1.29Z"
+        android:fillType="nonZero"/>
+    <path
+        android:fillColor="#fffffd"
+        android:pathData="M71.75,88.61c0,0.61 0.5,1.11 1.11,1.11h13.98a1.11,1.11 0,0 0,0 -2.22H72.86c-0.61,0 -1.11,0.5 -1.11,1.11Z"
+        android:fillType="nonZero"/>
+</vector>

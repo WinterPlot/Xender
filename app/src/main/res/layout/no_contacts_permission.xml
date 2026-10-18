@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/selector_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/no_contacts_permission_iv"
+        android:layout_width="@dimen/x_dp_240"
+        android:layout_height="@dimen/x_dp_240"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@+id/no_contacts_permission_des_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/cx_sp_15"
+        android:textColor="@color/txt_primary"
+        android:gravity="center"
+        android:id="@+id/no_contacts_permission_des_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x_dp_16"
+        android:layout_marginTop="@dimen/x_dp_16"
+        android:layout_marginRight="@dimen/x_dp_16"
+        android:layout_marginHorizontal="@dimen/x_dp_16"
+        app:layout_constraintBottom_toTopOf="@+id/no_contacts_permission_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_contacts_permission_iv"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textColor="@color/txt_white"
+        android:gravity="center"
+        android:id="@+id/no_contacts_permission_btn"
+        android:background="@drawable/btn_primary_round_corner"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/x_dp_48"
+        android:layout_marginLeft="@dimen/x_dp_8"
+        android:layout_marginTop="@dimen/x_dp_16"
+        android:layout_marginRight="@dimen/x_dp_8"
+        android:layout_marginHorizontal="@dimen/x_dp_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/no_contacts_permission_iv"
+        app:layout_constraintStart_toStartOf="@+id/no_contacts_permission_iv"
+        app:layout_constraintTop_toBottomOf="@+id/no_contacts_permission_des_tv"
+        style="@style/button_text_style_bold"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

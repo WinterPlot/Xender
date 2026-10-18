@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/app_window_bg"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="bottom|center_horizontal"
+        android:height="28dp"
+        android:width="85.61dp"
+        android:drawable="@drawable/svg_left_logo_nonet"
+        android:bottom="64dp"/>
+</layer-list>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--ie使用edge渲染模式-->
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+    <meta name="renderer" content="webkit"><!--360渲染模式-->
+    <meta name="format-detection" content="telephone=notelphone=no, email=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="apple-touch-fullscreen" content="yes"/><!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/><!-- 设置苹果工具栏颜色:默认值为 default，可以定为 black和 black-translucent-->
+    <!-- <meta http-equiv="Cache-Control" content="no-siteapp" />不让百度转码 -->
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <meta name="HandheldFriendly" content="true"><!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+    <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+    <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+    <!-- <meta name="browsermode" content="application">UC应用模式 -->
+    <meta name="x5-page-mode" content="app"><!-- QQ应用模式 -->
+    <meta name="msapplication-tap-highlight" content="no"><!-- windows phone 点击无高光 --> 
+
+    <title>Contact US</title>
+    <style type="text/css">
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    html, body{
+      font: 14px/1.2 "Arail";
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      color: #424242;
+    }
+    body>a{
+      position: absolute;
+      top: -9999px;
+    }
+
+    .direction-rtl{
+      direction: rtl;
+    }
+    .wrap{
+      width: 100%;
+      height: 100%;
+    }
+
+    .tip-box{
+      width: 100%;
+      height: calc(100% - 2rem);
+      padding-top: 1rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .tip-box img{
+      display: block;
+      width: 2rem;
+      margin: 0 auto;
+    }
+    .tip-box .tip-title{
+      font-size: 1.5rem;
+      padding: .6rem .8rem;
+      color: #000;
+      text-align: center;
+    }
+    .tip-box .message{
+      padding: 0rem 1.5rem 1rem;
+    }
+    .tip-box .message p{
+      line-height: 1.5rem;
+    }
+    .tip-box .message p span{
+      color: #008900;
+    }
+    .tip-box .message p strong{
+      color: red;
+    }
+
+    /** active */
+    .tip-box.active .message p{
+      line-height: 1.35rem;
+    }
+    .tip-box.active .tip-title{
+      font-size: 1.4rem;
+      padding: .4rem .8rem;
+    }
+
+    /** ltr & rtl */
+    .direction-right{
+      direction: rtl;
+    }
+    .direction-right #msg-4 span{
+      float: right;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="wrap" class="wrap">
+      <div id="tip-box" class="tip-box">
+        <div class="tip-content">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAABvVJREFUaAXlW1tsFFUY/md2t7vdstsF2m5pCxUIpbTcDH0wYpT7i4G2+qDCgzEiJCrxgiSQGK2GoAnEGBMTAQ34ghoIEGKiRi5eUrwVQSpQCBXLpaWlUNrtbm+7M55vZNrd7bY9Z2a2tvXfbGbmzH8535zbf/5zjkQJaKe6wHHj/J0ySZXK2OsS9s9RVXVcAtYRkyRJUjvLTD37V6mSeji3aMLh9dKpnvgMSvEJb52fXh5R1O2kqtPj342qZ0mqtcnSpjeLag9F57sXcIVaIdP5T99VFNoUzTDa72WZtlPR05srpAoFWOReQGMQLLBpBciw6Ti1EtaqcUQ5qCeOxavNJj+G6i1pHdS5lgujvs0OVUqsTecWj59lR29MKo3uDmoosHjPOmFgle8NPTwio54HWNFpYZz9v1AJAOcMN9pUm49SbenDbRb2cuzJ9KBkstN9aQ9QoXcZTXIVk8fhJ489k+yyUwMbVrooEG6iQE8T1Xf+STVt31Jd8BdSKJKUjwGs0hvVU1WrtWe7imhhxnNU4FlMLptXSH1HpJUuBY5T5a3d1NhVIyTLw2wpYJ8jl5b4N9Lc9FJivi2P/QF5FFWhs3cP0/Gm96i1By6yNWQZ4IczX6BHMjew6ppiTc7uaelh1f4EA13ZvNsSvXazWuySk8rzdtDs9EfNqkoo72DtfUX2FvK7ZtGRG5sprHYn5ONN7POleSWi+MaxDujZafuTBjbKFM3zldEzUz+nNNvE6GThe8OAUbJr8j+hnNTZwkaNCuS559Pq/N1kk4w3G8OAUY2HE6z+kQC6NPcd/VH4aggwOqhktVkeBPN85fRgxloe1n48woAx9KA3NkthpZsOXHuZtp4rpp2XS+lWV62QyiVZr5LXni0kA2ZhwEv9r1ky9Jy+e4CqW49Qj9rBvKxq+rphq1DmHbKLFvtfEZIRBgwPak76KmEjiQSC4eaY5PbwrZhnnof5vscp0zmDh7WXR6iEF2asM+1B6ZbnpK8kp9wXCC2ZsFp/xX2VJVlzYbkFGCO344GJQIFnkYjuQXknOqfShhlH6UrwJ8pwTjfc48/0LCWJtUyVTTl4iLuEMesRnQgMloHOSEAbT+f6Sg2DhX63fTxNcS8YzFTMO+4SnuVdHiNo9KGp8xJ9c3Mb1bb/yFRItCjrJfY31+sXeldQXeg3rixxl/Ck1GIuhYMxnb17hD6qXUWX239gVRA/hb5v+oA6Im2DiQ35DnNtXuIG7LH7eXUm5DvTcpCq7uyjtdMOxLzHZF9VzU34PY6sGJ2DPXADxkTBKN3svEAnb39MT+Xvovjhx+8q1NqhUd2QEykMLsCIQZmZ57Z219MTkz9kcSwvXWw7FoMNvaxZctrSKEV2c6nh7LTMRYFmevtAIXwTTYWeZdGPSb/nKmHEmRBwM0sNHeeoLXyzVw2aSU7q3N5nozddkXbqVkJc4lyAoSlgwPWLz0FN4GhM0kzPEks8N0Q+eYkfcE8jr84B+ZLRfmEsIJA3bsANLG5shtpYpqJ1IGIybdxDZlT2yiKmzUvcgC+wILkZiu+sABZTPFBE7bczQcgUAvi8xA0YKwJmPKKatvj2+2/PDe/reug0b3778QXDt+la6FS/9IESuAHDI7oUiB1DB1Ian96tdLBZ0cmYZHRY10NnNNcSIVijhA8JJ5WXuAFDIYLhWBEQpfqOahZP7hvWUuQ0+itYSV9cfZ7K8razWZhHVKXGrzCXFB6cCAkBbuys0ZY/RAyA1808tWjqVoIsqL6FVuVuo8nu+6NfCd3/3rKfmgVjYUKAkRus9Yg6IVmuAlqZs418jjyakJLPgurl9CKb/M8wEVBAM/mu6X2hDwRmQ2tLCPWsyN4sbMxKga8a3qafb+8VVilcwrBQ2byL/mAre/8VoSobAYv8GgIMQSxsoZcdbroarKIv6183bNYwYKzi7atbN6ygAfazq+tNOSqGAeMTByPNtOfKk6x6HzL8xXkFUY33/r2GQpEWXpGEfJzz4YSyWiJK+uD1jYQhazFb/sB6rpWE3vhY4w7WZvdYotZQLz2QZaz1YPkDKwIIkpshOBWnWameYEOPyPRvKJuWAtaNZTkLtNU9hG8QNxYh+MYXmQsLr07UqeCxkxTAumGsCExxl7BtS8u1YDsiHAi4IQYF6ooEWek13tu2VM22LR1lE4EqId9Yt8V7tWMnebL2aiHuXBf6VftHZwi+NNv8yB2WiZY1cw+saGjW7QnizA18ad4YFKdKXrZ6AK7i5R4DfFUyDkSMASBcEIBVxukPFjoU22/ApX6EMWGDOMMq46gLTn+MsOxZnh1gBFbNO8BZAO30h+VmRoZCYNOP8/S5Q+yoy1gErR/j0T99vy2v/5uDWvoXwHUsH8X7B5R7coHKShaUAAAAAElFTkSuQmCC" alt="">
+          <h2 id="tip-title" class="tip-title"></h2>
+          <div id="message" class="message">
+            <!-- <p id="msg-1"></p> -->
+            <p id="msg-2"></p>
+            <!-- <p id="msg-3"></p> -->
+            <p id="msg-4"></p>
+            <p id="msg-5"></p>
+            <!-- <p id="msg-6"></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+    <script type="text/javascript">
+    var config = {
+        defaultLang: 'en',
+        allLangs: [
+            "bn",
+            "en",
+            "en-US",
+            "gu",
+            "hi",
+            "kn",
+            "ml",
+            "mr",
+            "pa",
+            "ta",
+            "te",
+            "ur",
+            'od', 
+            'bh', 
+            'ra', 
+            'ha', 
+            'or', 
+            'as'
+        ]
+    }
+    var langJson = {
+      "as": {
+          "title": "কন্টাক্ট  উস",
+          "title2": "হেল্প  উস  &  গেট  ক্যাশ",
+
+          "msg-2": "<span>কানেক্ট  ওর  ট্রান্সফার  প্রব্লেম ? ইফ  ইউ  মেট  টি  ফল্লওইং  প্রব্লেমস : </span><br/><span>(1)</span> ক্যান 'টি  ক্রিটে  হটস্পট <br/><span>(2)</span> স্ক্যান  কর  কোড , ক্যান 'টি  কানেক্ট <br/><span>(3)</span> ক্যান 'টি  সার্চ  ফর  সেনদের <br/><span>(4)</span> ট্রান্সফার   ফাইলএড , ওয়েটিং , স্পিড   স্লো <br/> কমে  তো  আওয়ার  অফিস  এত  গুরুজিরআমি , বরিং  ইওর  ডেভিসেস  এন্ড  শো  উস  টি  প্রব্লেম , ওই  বিলল  কভার  ইওর  ট্রাফিক  মানি  এন্ড  জিভে  ইউ  ক্যাশ  রিওয়ার্ড . <br/>কন্টাক্ট  উস  এত",
+          "msg-4": "<span>হোয়াটস্যাপ  ঈদ: </span>+91 8929254380",
+          "msg-10": "<span>ইমেইল: </span>support@userlabs.com",
+          "msg-5": "<span>প্লিজ  কন্টাক্ট  উস  এন্ড  কমে  তো  আওয়ার   অফিস  এত  গুরুগ্রাম , জিভে  ফিডব্যাক , হেল্প  সল্ভ  প্রব্লেম  এন্ড  গেট <strong>5000 INR</strong></span>"
+      },
+      "bh": {
+          "title": "हमसे संपर्क करें",
+          "title2": "हमारी सहायता करें और नकद प्राप्त करें",
+
+          "msg-2": "<span>कनेक्ट या स्थानांतरण समस्या? यदि आप निम्नलिखित समस्याओं से मिले: </span><br/><span>(1)</span> हॉटस्पॉट नहीं बना सकते <br/><span>(2)</span> स्कैन क्यूआर कोड, कनेक्ट नहीं कर सकते <br/><span>(3)</span> हॉटस्पॉट नहीं बना सकते <br/><span>(4)</span> स्थानांतरण विफल, प्रतीक्षा कर रहा है, गति धीमी करें <br/> गुरुग्राम में हमारे कार्यालय में आएं, अपने उपकरणों को लाएं और हमें समस्या दिखाएं, हम आपके ट्रैफ़िक के पैसे को कवर करेंगे और आपको नकद इनाम देंगे। <br/>पर हमसे संपर्क करें",
+          "msg-4": "<span>whatsApp आईडी: </span>+91 8929254380", 
+          "msg-10": "<span>ईमेल: </span>support@userlabs.com",
+          "msg-5": "<span>कृपया हमसे संपर्क करें और गुरुग्राम में हमारे कार्यालय में आएं, प्रतिक्रिया दें, समस्या को हल करने में मदद करें और <strong>5000 INR</strong> प्राप्त करें</span>"
+      },
+      "bn": {
+          "title": "আমাদের সাথে যোগাযোগ করুন",
+          "title2": "আমাদের সাহায্য করুন এবং নগদ পান",
+
+          "msg-2": "<span>সংযোগ স্থাপন বা স্থানান্তর? আপনি যদি নিম্নলিখিত সমস্যা পূরণ করেন: </span><br/><span>(1)</span> হটস্পট তৈরি করতে পারবেন না <br/><span>(2)</span> স্ক্যান QR কোড, সংযোগ করতে পারবেন না <br/><span>(3)</span> প্রেরকের জন্য অনুসন্ধান করতে পারবেন না <br/><span>(4)</span> স্থানান্তর ব্যর্থ, অপেক্ষা, গতি ধীর <br/> গুরুগরামে আমাদের অফিসে আসুন, আপনার যন্ত্রগুলি আনুন এবং আমাদের সমস্যাটি দেখান, আমরা আপনার ট্র্যাফিকের অর্থ কভার করব এবং নগদ পুরস্কার দেব। <br/>আমাদের সাথে যোগাযোগ করুন",
+          "msg-4": "<span>Whatsapp আইডি: </span>+91 8929254380",
+          "msg-10": "<span>ইমেইল: </span>support@userlabs.com",
+          "msg-5": "<span>আমাদের সাথে যোগাযোগ করুন এবং গুরুগরামে আমাদের অফিসে আসুন, প্রতিক্রিয়া দিন, সমস্যার সমাধান করুন এবং <strong>5000 INR</strong> পান</span>"
+      },
+      "en": {
+          "title": "Contact us",
+          "title2": "Help Us & Get Cash",
+
+          "msg-2": "<span>Connect or Transfer Problem? If you met the following problems: </span><br/><span>(1)</span> can't create hotspot <br/><span>(2)</span> scan QR code, can't connect <br/><span>(3)</span> can't search for sender <br/><span>(4)</span> transfer failed, waiting, speed slow <br/> Come to our office at Gurugram, bring your devices and show us the problem, we will cover your traffic money and give you cash reward. <br/>Contact us at",
+          "msg-4": "<span>WhatsApp ID: </span>+91 8929254380",
+          "msg-10": "<span>Email: </span>support@userlabs.com",
+          "msg-5": "<span>Please contact us and come to our office at Gurugram, give feedback, help solve problem and get <strong>5000 INR</strong></span>"
+      },
+      "gu": {
+          "title": "અમારો સંપર્ક કરો",
+          "title2": "અમને સહાય કરો અને રોકડ મેળવો",
+
+          "msg-2": "<span>કનેક્ટ અથવા સમસ્યા સ્થાનાંતરિત કરો છો? જો તમે નીચેની સમસ્યાઓનો સામનો કરો છો: </span><br/><span>(1)</span> હોટસ્પોટ બનાવી શકતા નથી <br/><span>(2)</span> ક્યૂઆર કોડ સ્કેન કરો, કનેક્ટ કરી શકતા નથી <br/><span>(3)</span> પ્રેષક માટે શોધી શકતા નથી <br/><span>(4)</span> ટ્રાન્સફર નિષ્ફળ, રાહ જોવી, ધીમી ગતિ <br/> ગુરુગ્રામમાં અમારી ઑફિસ પર આવો, તમારા ઉપકરણો લાવો અને અમને સમસ્યા દર્શાવો, અમે તમારા ટ્રાફિકના પૈસાને આવરી લઈશું અને તમને રોકડ પુરસ્કાર આપીશું. <br/>અમારો સંપર્ક કરો",
+          "msg-4": "<span>WhatsApp ID: </span>+91 8929254380",
+          "msg-10": "<span>ઇમેઇલ: </span>support@userlabs.com",
+          "msg-5": "<span>મહેરબાની કરીને અમારો સંપર્ક કરો અને ગુરુગ્રામમાં અમારી ઑફિસ પર આવો, પ્રતિસાદ આપો, સમસ્યાનું સમાધાન કરવામાં મદદ કરો અને <strong>5000 INR</strong> મેળવો</span>"
+      },
+      "ha": {
+          "title": "हमसे संपर्क करें",
+          "title2": "हमारी सहायता करें और नकद प्राप्त करें",
+
+          "msg-2": "<span>कनेक्ट या स्थानांतरण समस्या? यदि आप निम्नलिखित समस्याओं से मिले: </span><br/><span>(1)</span> हॉटस्पॉट नहीं बना सकते <br/><span>(2)</span> स्कैन क्यूआर कोड, कनेक्ट नहीं कर सकते <br/><span>(3)</span> हॉटस्पॉट नहीं बना सकते <br/><span>(4)</span> स्थानांतरण विफल, प्रतीक्षा कर रहा है, गति धीमी करें <br/> गुरुग्राम में हमारे कार्यालय में आएं, अपने उपकरणों को लाएं और हमें समस्या दिखाएं, हम आपके ट्रैफ़िक के पैसे को कवर करेंगे और आपको नकद इनाम देंगे। <br/>पर हमसे संपर्क करें",
+          "msg-4": "<span>whatsApp आईडी: </span>+91 8929254380", 
+          "msg-10": "<span>ईमेल: </span>support@userlabs.com",
+          "msg-5": "<span>कृपया हमसे संपर्क करें और गुरुग्राम में हमारे कार्यालय में आएं, प्रतिक्रिया दें, समस्या को हल करने में मदद करें और <strong>5000 INR</strong> प्राप्त करें</span>"
+      },
+      "hi": {
+          "title": "हमसे संपर्क करें",
+          "title2": "हमारी सहायता करें और नकद प्राप्त करें",
+
+          "msg-2": "<span>कनेक्ट या स्थानांतरण समस्या? यदि आप निम्नलिखित समस्याओं से मिले: </span><br/><span>(1)</span> हॉटस्पॉट नहीं बना सकते <br/><span>(2)</span> स्कैन क्यूआर कोड, कनेक्ट नहीं कर सकते <br/><span>(3)</span> हॉटस्पॉट नहीं बना सकते <br/><span>(4)</span> स्थानांतरण विफल, प्रतीक्षा कर रहा है, गति धीमी करें <br/> गुरुग्राम में हमारे कार्यालय में आएं, अपने उपकरणों को लाएं और हमें समस्या दिखाएं, हम आपके ट्रैफ़िक के पैसे को कवर करेंगे और आपको नकद इनाम देंगे। <br/>पर हमसे संपर्क करें",
+          "msg-4": "<span>whatsApp आईडी: </span>+91 8929254380", 
+          "msg-10": "<span>ईमेल: </span>support@userlabs.com",
+          "msg-5": "<span>कृपया हमसे संपर्क करें और गुरुग्राम में हमारे कार्यालय में आएं, प्रतिक्रिया दें, समस्या को हल करने में मदद करें और <strong>5000 INR</strong> प्राप्त करें</span>"
+      },
+      "kn": {
+          "title": "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ",
+          "title2": "ಸಹಾಯ ಮತ್ತು ನಗದು ಪಡೆಯಿರಿ",
+
+          "msg-2": "<span>ಸಂಪರ್ಕ ಅಥವಾ ವರ್ಗಾವಣೆ ಸಮಸ್ಯೆ? ನೀವು ಈ ಕೆಳಗಿನ ಸಮಸ್ಯೆಗಳನ್ನು ಎದುರಿಸಿದರೆ: </span><br/><span>(1)</span> ಹಾಟ್ಸ್ಪಾಟ್ ರಚಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ <br/><span>(2)</span> QR ಕೋಡ್ ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ, ಸಂಪರ್ಕಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ <br/><span>(3)</span> ಕಳುಹಿಸುವವರನ್ನು ಹುಡುಕಲು ಸಾಧ್ಯವಿಲ್ಲ <br/><span>(4)</span> ವರ್ಗಾವಣೆ ವಿಫಲವಾಗಿದೆ, ನಿರೀಕ್ಷಿಸುತ್ತಿದೆ, ವೇಗ ನಿಧಾನವಾಗಿ <br/> ಗುರೂಗ್ರಾಮ್ನಲ್ಲಿ ನಮ್ಮ ಕಚೇರಿಗೆ ಬನ್ನಿ, ನಿಮ್ಮ ಸಾಧನಗಳನ್ನು ತಂದು ನಮಗೆ ಸಮಸ್ಯೆಯನ್ನು ತೋರಿಸು, ನಿಮ್ಮ ಸಂಚಾರ ಹಣವನ್ನು ನಾವು ಸಂಗ್ರಹಿಸುತ್ತೇವೆ ಮತ್ತು ನಗದು ಬಹುಮಾನವನ್ನು ನೀಡುತ್ತೇವೆ.<br/>ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ",
+          "msg-4": "<span>WhatsApp ID: </span>+91 8929254380",
+          "msg-10": "<span>ಇಮೇಲ್: </span>support@userlabs.com",
+          "msg-5": "<span>ಗುರುಗ್ರಾಮ್ನಲ್ಲಿ ನಮ್ಮ ಕಚೇರಿಗೆ ಭೇಟಿ ನೀಡಿ, ಪ್ರತಿಕ್ರಿಯೆ ನೀಡಿ, ಸಮಸ್ಯೆಯನ್ನು ಪರಿಹರಿಸಲು ಸಹಾಯ ಮಾಡಿ ಮತ್ತು <strong>5000 INR</strong> </span>"
+      },
+      "ml": {
+          "title": "ഞങ്ങളെ സമീപിക്കുക",
+          "title2": "ഞങ്ങളെ സഹായിക്കൂ & പണം നേടുക",
+
+          "msg-2": "<span>ബന്ധിപ്പിക്കുക അല്ലെങ്കിൽ ട്രാൻസ്ഫർ പ്രോംപ്റ്റ്? നിങ്ങൾ ഇനിപ്പറയുന്ന പ്രശ്നങ്ങൾ കണ്ടെത്തിയാൽ: </span><br/><span>(1)</span> ഹോട്ട്സ്പോട്ട് സൃഷ്ടിക്കാൻ കഴിയില്ല <br/><span>(2)</span> QR കോഡ് സ്കാൻ ചെയ്യുക, കണക്റ്റുചെയ്യാൻ കഴിയില്ല <br/><span>(3)</span> അയയ്ക്കുന്നയാൾക്കായി തിരയാനാവില്ല <br/><span>(4)</span> ട്രാൻസ്ഫർ ചെയ്യൽ, കാത്തിരിപ്പ്, വേഗത വേഗത. <br/> Gururram ൽ ഞങ്ങളുടെ ഓഫീസിലേക്ക് വരിക, നിങ്ങളുടെ ഉപകരണങ്ങൾ കൊണ്ടുവന്ന് ഞങ്ങൾക്ക് ഈ പ്രശ്നം കാണിച്ചുതരിക, ഞങ്ങൾ നിങ്ങളുടെ ട്രാഫിക് പണം മൂടി നിങ്ങൾക്ക് പണം നൽകും.<br/>ഞങ്ങളെ സമീപിക്കുക",
+          "msg-4": "<span>WhatsApp ID: </span>+91 8929254380",
+          "msg-10": "<span>ഇമെയിൽ: </span>support@userlabs.com",
+          "msg-5": "<span>ഞങ്ങളെ ബന്ധപ്പെടുക, Gurukram ഞങ്ങളുടെ ഓഫീസിലേക്ക് വരിക, ഫീഡ്ബാക്ക് നൽകുക, പ്രശ്നം പരിഹരിക്കാൻ സഹായിക്കുക <strong>5000 INR</strong> </span>"
+      },
+      "mr": {
+          "title": "आमच्याशी संपर्क साधा",
+          "title2": "आम्हाला मदत करा आणि पैसे मिळवा",
+
+          "msg-2": "<span>समस्या कनेक्ट किंवा ट्रान्सफर? आपण खालील समस्या पूर्ण केल्यास:</span><br/><span>(1)</span> हॉटस्पॉट तयार करू शकत नाही <br/><span>(2)</span> क्यूआर कोड स्कॅन करा, कनेक्ट करू शकत नाही <br/><span>(3)</span> प्रेषक शोधू शकत नाही <br/><span>(4)</span> हस्तांतरण अयशस्वी, प्रतीक्षा, गती गती <br/> गुरूग्राम येथील आमच्या कार्यालयात ये, आपल्या डिव्हाइसेस आण आणि आम्हाला समस्या दर्शवि, आम्ही आपल्या रहदारीचे पैसे कव्हर करू आणि आपल्याला रोख पारितोषिक देऊ. <br/>येथे आमच्याशी संपर्क साधा",
+          "msg-4": "<span>व्हाट्सएप आयडी: </span>+91 8929254380",
+          "msg-10": "<span>ईमेलः: </span>support@userlabs.com",
+          "msg-5": "<span>आमच्याशी संपर्क साधा आणि गुरूग्राम येथील आमच्या कार्यालयात जा, प्रतिक्रिया द्या, समस्या सोडवण्यात मदत करा आणि <strong>5000 INR</strong> मिळवा</span>"
+      },
+      "od": {
+          "title": "କଂଟକେତ  ଉତ୍ସ",
+          "title2": "ହେଲ୍ପ  ଉତ୍ସ  & ଗେଟ  ଚାଷ",
+
+          "msg-2": "<span>କଣ୍ଣେସତ  ଡ  ଟ୍ରାନ୍ସଫର  ପ୍ରୋବ୍ଲେମ ? ଇଫ  ଯୋଉ  ମେଟା  ଥେ  ଫୋଲଲବିଙ୍ଗ  ପ୍ରୋବ୍ଲେମସ :</span><br/><span>(1)</span> ଚାଁ ' ତ  ସିରିଏଟ  ହଟାସ୍ପଟ <br/><span>(2)</span> ସଚନ  QR କୋଡେ , ଚାଁ 'ତ  କଣ୍ଣେସତ <br/><span>(3)</span> ଚାଁ ' ତ  ସେଅର୍ଚ୍ଚ  ଫୋର  ସ୍ୱେନ୍ଦେର <br/><span>(4)</span> ଟ୍ରାନ୍ସଫର  ଫୈଲେଡ଼ , ବାଇଟିଙ୍ଗ , ସ୍ପୀଡ଼  ଶ୍ଲୋବ <br/> କମେ  ତୋ  ଓଉର  ଅଫିସ  ଅଟ  ଗୁରୁଃଗ୍ରାମ , ବରିଂ  ୟୌର  ଡେବିସସ  ଆଣ୍ଡ  ଶବ  ଉତ୍ସ  ଥେ  ପ୍ରୋବ୍ଲେମ , ବେ  ବିଲ୍ଲ  ଚୋବେର  ୟୌର  ତରଫଫିସ  ମୋନେଯ  ଆଣ୍ଡ  ଜିବେ  ଯୋଉ  ଚାଷ  ରେବାର୍ଡ .<br/>Coକଂଟକେଟ ଉତ୍ସ ଅଟ",
+          "msg-4": "<span>ଭତ୍ସପ୍ପ  ଇଦ: </span>+91 8929254380",
+          "msg-10": "<span>ଏମଆଇଲ: </span>support@userlabs.com",
+          "msg-5": "<span>ପ୍ଲେଆସେ  କଂଟକେଟ  ଉତ୍ସ  ଆଣ୍ଡ  କମେ  ତୋ  ଔର  ଅଫିସ  ଅଟ  ଗୁରୁଃଗ୍ରାମ , ଜିବେ  ଫୀଦବଚକ , ହେଲ୍ପ  ସୋଲବେ  ପ୍ରୋବ୍ଲେମ  ଆଣ୍ଡ  ଗେଟ <strong>5000 INR</strong></span>"
+      },
+      "or": {
+          "title": "କଂଟକେତ  ଉତ୍ସ",
+          "title2": "ହେଲ୍ପ  ଉତ୍ସ  & ଗେଟ  ଚାଷ",
+
+          "msg-2": "<span>କଣ୍ଣେସତ  ଡ  ଟ୍ରାନ୍ସଫର  ପ୍ରୋବ୍ଲେମ ? ଇଫ  ଯୋଉ  ମେଟା  ଥେ  ଫୋଲଲବିଙ୍ଗ  ପ୍ରୋବ୍ଲେମସ :</span><br/><span>(1)</span> ଚାଁ ' ତ  ସିରିଏଟ  ହଟାସ୍ପଟ <br/><span>(2)</span> ସଚନ  QR କୋଡେ , ଚାଁ 'ତ  କଣ୍ଣେସତ <br/><span>(3)</span> ଚାଁ ' ତ  ସେଅର୍ଚ୍ଚ  ଫୋର  ସ୍ୱେନ୍ଦେର <br/><span>(4)</span> ଟ୍ରାନ୍ସଫର  ଫୈଲେଡ଼ , ବାଇଟିଙ୍ଗ , ସ୍ପୀଡ଼  ଶ୍ଲୋବ <br/> କମେ  ତୋ  ଓଉର  ଅଫିସ  ଅଟ  ଗୁରୁଃଗ୍ରାମ , ବରିଂ  ୟୌର  ଡେବିସସ  ଆଣ୍ଡ  ଶବ  ଉତ୍ସ  ଥେ  ପ୍ରୋବ୍ଲେମ , ବେ  ବିଲ୍ଲ  ଚୋବେର  ୟୌର  ତରଫଫିସ  ମୋନେଯ  ଆଣ୍ଡ  ଜିବେ  ଯୋଉ  ଚାଷ  ରେବାର୍ଡ .<br/>Coକଂଟକେଟ ଉତ୍ସ ଅଟ",
+          "msg-4": "<span>ଭତ୍ସପ୍ପ  ଇଦ: </span>+91 8929254380",
+          "msg-10": "<span>ଏମଆଇଲ: </span>support@userlabs.com",
+          "msg-5": "<span>ପ୍ଲେଆସେ  କଂଟକେଟ  ଉତ୍ସ  ଆଣ୍ଡ  କମେ  ତୋ  ଔର  ଅଫିସ  ଅଟ  ଗୁରୁଃଗ୍ରାମ , ଜିବେ  ଫୀଦବଚକ , ହେଲ୍ପ  ସୋଲବେ  ପ୍ରୋବ୍ଲେମ  ଆଣ୍ଡ  ଗେଟ <strong>5000 INR</strong></span>"
+      },
+      "pa": {
+          "title": "ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ",
+          "title2": "ਸਾਡੀ ਮਦਦ ਕਰੋ ਅਤੇ ਨਕਦ ਲਵੋ",
+
+          "msg-2": "<span>ਕਨੈਕਟ ਜਾਂ ਟ੍ਰਾਂਸਫਰ ਸਮੱਸਿਆ? ਜੇ ਤੁਸੀਂ ਅੱਗੇ ਦਿੱਤੀ ਸਮੱਸਿਆਵਾਂ ਨੂੰ ਪੂਰਾ ਕਰਦੇ ਹੋ: </span><br/><span>(1)</span> ਹੌਟਸਪੌਟ ਨਹੀਂ ਬਣਾ ਸਕਦਾ <br/><span>(2)</span> QR ਕੋਡ ਸਕੈਨ ਕਰੋ, ਕਨੈਕਟ ਨਹੀਂ ਕਰ ਸਕਦਾ <br/><span>(3)</span> ਭੇਜਣ ਵਾਲੇ ਲਈ ਖੋਜ ਨਹੀਂ ਕਰ ਸਕਦਾ <br/><span>(4)</span> ਟ੍ਰਾਂਸਫਰ ਅਸਫਲ, ਉਡੀਕ, ਗਤੀ ਹੌਲੀ <br/> ਗੁਰਗੱਰਾ ਵਿੱਚ ਸਾਡੇ ਦਫਤਰ ਵਿੱਚ ਆਓ, ਸਾਡੀਆਂ ਡਿਵਾਈਸਾਂ ਲਓ ਅਤੇ ਸਾਨੂੰ ਸਮੱਸਿਆ ਦਰਸਾਓ, ਅਸੀਂ ਤੁਹਾਡੇ ਟ੍ਰੈਫਿਕ ਪੈਸੇ ਕਵਰ ਕਰਾਂਗੇ ਅਤੇ ਤੁਹਾਨੂੰ ਨਕਦ ਇਨਾਮ ਦੇਵਾਂਗੇ. <br/>ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ",
+          "msg-4": "<span>WhatsApp ID: </span>+91 8929254380",
+          "msg-10": "<span>ਈਮੇਲ: </span>support@userlabs.com",
+          "msg-5": "<span>ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ ਅਤੇ ਸਾਡੇ ਦਫਤਰ ਵਿੱਚ ਜਾਓ, ਗੁਰਗੱਰਾ ਵਿੱਚ, ਫੀਡਬੈਕ ਦਿਓ, ਸਮੱਸਿਆ ਹੱਲ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰੋ ਅਤੇ <strong>5000 INR</strong></span>"
+      },
+      "ra": {
+          "title": "हमसे संपर्क करें",
+          "title2": "हमारी सहायता करें और नकद प्राप्त करें",
+
+          "msg-2": "<span>कनेक्ट या स्थानांतरण समस्या? यदि आप निम्नलिखित समस्याओं से मिले: </span><br/><span>(1)</span> हॉटस्पॉट नहीं बना सकते <br/><span>(2)</span> स्कैन क्यूआर कोड, कनेक्ट नहीं कर सकते <br/><span>(3)</span> हॉटस्पॉट नहीं बना सकते <br/><span>(4)</span> स्थानांतरण विफल, प्रतीक्षा कर रहा है, गति धीमी करें <br/> गुरुग्राम में हमारे कार्यालय में आएं, अपने उपकरणों को लाएं और हमें समस्या दिखाएं, हम आपके ट्रैफ़िक के पैसे को कवर करेंगे और आपको नकद इनाम देंगे। <br/>पर हमसे संपर्क करें",
+          "msg-4": "<span>whatsApp आईडी: </span>+91 8929254380", 
+          "msg-10": "<span>ईमेल: </span>support@userlabs.com",
+          "msg-5": "<span>कृपया हमसे संपर्क करें और गुरुग्राम में हमारे कार्यालय में आएं, प्रतिक्रिया दें, समस्या को हल करने में मदद करें और <strong>5000 INR</strong> प्राप्त करें</span>"
+      },
+      "ta": {
+          "title": "எங்களை தொடர்பு கொள்ள",
+          "title2": "எங்களுக்கு உதவி & பணம் கிடைக்கும்",
+
+          "msg-2": "<span>இணைப்பு அல்லது பரிமாற்ற சிக்கல்? நீங்கள் பின்வரும் சிக்கல்களை சந்தித்தால்: </span><br/><span>(1)</span> ஹாட்ஸ்பாட் உருவாக்க முடியாது <br/><span>(2)</span> QR குறியீட்டை ஸ்கேன் செய்ய முடியாது <br/><span>(3)</span> அனுப்புநரை தேட முடியாது <br/><span>(4)</span> பரிமாற்றம் தோல்வி, காத்திருப்பு, வேகம் மெதுவாக <br/> Gurugram எங்கள் அலுவலகத்திற்கு வந்து, உங்கள் சாதனங்களை கொண்டு வந்து எங்களுக்கு பிரச்சனையை காண்பிப்போம், நாங்கள் உங்கள் போக்குவரத்து பணத்தை மூடி, பண வெகுமதி தருவோம். <br/>எங்களை தொடர்பு கொள்ளவும்",
+          "msg-4": "<span>whatsApp ஐடி: </span>+91 8929254380",
+          "msg-10": "<span>மின்னஞ்சல்: </span>support@userlabs.com",
+          "msg-5": "<span>தயவு செய்து எங்களை தொடர்பு மற்றும் Gurugram எங்கள் அலுவலகத்திற்கு வந்து, கருத்துக்களை வழங்க, பிரச்சனையை தீர்க்க மற்றும் <strong>5000 INR</strong> கிடைக்கும் உதவி</span>"
+      },
+      "te": {
+          "title": "మమ్మల్ని సంప్రదించండి",
+          "title2": "మాకు సహాయం & నగదు పొందండి",
+
+          "msg-2": "<span>కనెక్ట్ లేదా సమస్యను బదిలీ చేయాలా? మీరు కింది సమస్యలను కలుసుకుంటే: </span><br/><span>(1)</span> హాట్స్పాట్ సృష్టించలేరు <br/><span>(2)</span> QR కోడ్ను స్కాన్ చేయడం, కనెక్ట్ చేయడం సాధ్యం కాదు <br/><span>(3)</span> పంపినవారు కోసం శోధించలేరు <br/><span>(4)</span> బదిలీ విఫలమైంది, నిరీక్షణ, నెమ్మదిగా నెమ్మదిగా <br/> Gurugram వద్ద మా కార్యాలయానికి వెళ్లండి, మీ పరికరాలను తీసుకురాండి మరియు మాకు సమస్యను చూపుతుంది, మేము మీ ట్రాఫిక్ డబ్బుని కవర్ చేస్తాము మరియు మీకు నగదు బహుమతిని ఇస్తాము. <br/>మమ్మల్ని సంప్రదించండి",
+          "msg-4": "<span>WhatsApp ID: </span>+91 8929254380",
+          "msg-10": "<span>ఇమెయిల్: </span>support@userlabs.com",
+          "msg-5": "<span>గురుగ్రాం వద్ద మా కార్యాలయానికి వచ్చి, అభిప్రాయాన్ని ఇవ్వండి, సమస్యను పరిష్కరించడానికి సహాయం చేయండి మరియు <strong>5000 INR</strong> </span>"
+      },
+      "ur": {
+          "title": "ہم سے رابطہ کریں",
+          "title2": "ہماری مدد کریں اور کیش حاصل کریں",
+
+          "msg-2": "<span>رابطے یا منتقلی کا مسئلہ؟ اگر آپ مندرجہ ذیل مسائل سے ملاقات کرتے ہیں تو: </span><br/><span>(1)</span> ہاٹ پوٹ پیدا نہیں کر سکتے ہیں <br/><span>(2)</span> QR کوڈ اسکین کریں، رابطہ نہیں کر سکتے ہیں <br/><span>(3)</span> بھیجنے والا نہیں <br/><span>(4)</span> منتقلی ناکام ہوگئی، انتظار کر رہا ہے، رفتار کو سست رفتار <br/> گرگرم میں ہمارے دفتر آو، آپ کے آلات لائیں اور ہمیں اس مسئلے کو ظاہر کریں، ہم آپ کے ٹریفک پیسہ کمائیں گے اور آپ کو نقد انعام دینے دیں گے. <br/>ہم سے رابطہ کریں,",
+          "msg-4": "<span>WhatsApp ID: </span>+91 8929254380",
+          "msg-10": "<span>ای میل: </span>support@userlabs.com",
+          "msg-5": "<span> براہ کرم ہم سے رابطہ کریں اور گرگرم میں اپنے دفتر میں آتے ہیں، رائے دیں، مسئلے کو حل کرنے میں مدد کریں اور حاصل کریں <strong>5000 INR</strong></span>"
+      }
+    };
+    var utils = {
+      ajax: function(opts){
+
+        var options = {
+          url: '',
+          type: 'GET',
+          data: null,
+          timeout: 30,
+          contentType: 'application/x-www-form-urlencoded',
+          success: function(){},
+          error: function(){},
+          timeoutFn: function(){
+            // alert("Network error,check your internet connection and try again");
+          }
+        };
+
+        if(!opts.url || !opts.type){
+          return;
+        }
+
+        for(var i in opts){
+          options[i] = opts[i];
+        }
+
+        function callback (xhr) {
+          // alert('xmlhttp.status = ' + xmlhttp.status + ' xmlhttp.readyState = ' + xmlhttp.readyState);
+          var showError = function(){
+            if(xmlhttp.responseText.indexOf('401') > -1){
+              alert(' xmlhttp.responseText = ' + xmlhttp.responseText);
+            }else{
+              alert('xmlhttp.status = ' + xmlhttp.status + ' xmlhttp.responseText = ' + xmlhttp.responseText);
+            }
+          }
+          
+          xmlhttp.boxNetStatus = 1;
+          if(xmlhttp.readyState == 4){
+            // alert('2 = ' + xmlhttp.status);
+            clearTimeout(xmlHttpTimeout); 
+            // status == 0, 时可能出现问题, 本地响应, 断网时会出现
+            if(xmlhttp.status == 200 || xmlhttp.status == 0){
+              // alert('xmlhttp.readyState = ' + xmlhttp.readyState + ', xmlhttp.status = ' + xmlhttp.status + ', xmlhttp.responseText = ' + !!xmlhttp.responseText);
+              // alert('xmlhttp.responseText = ' + xmlhttp.responseText);
+              // alert('xmlhttp.response = ' + xmlhttp.response);
+              // 本地响应, 断网处理
+              if(xmlhttp.status == 0 && !xmlhttp.responseText){
+                xmlhttp.boxNetStatus = 0;
+                options.error(xmlhttp);
+                
+                // alert("Network error,check your internet connection and try again");
+              }else{
+                options.success(xmlhttp.responseText);
+                clearTimeout(xmlHttpTimeout);
+              }
+            }else if(xmlhttp.status == 401){
+              if(window.account){
+                window.account.gotoLogin();
+              }else{
+                // showError();
+                options.error(xmlhttp);
+              }
+            }else if(xmlhttp.status == 400){
+              // showError();
+              // alert("400");
+              options.error(xmlhttp);
+              clearTimeout(xmlHttpTimeout);
+            }else{
+              // 按超时处理, 不清除 clearTimeout(xmlHttpTimeout)
+            }
+          }
+        }
+
+        var xmlhttp = new XMLHttpRequest();
+
+        var xmlHttpTimeout = null;
+
+
+        xmlhttp.onreadystatechange = callback ;
+
+        if(options.type=='GET'){
+          var u = '';
+          // console.log('data = ' + JSON.stringify(options.data));
+          if(options.data){
+            for(var di in options.data){
+              u += di + '=' + options.data[di] + '&';
+            }
+
+            u = options.url + '?' + u.substring(0, u.length - 1);
+          }else{
+            u = options.url;
+          }
+          xmlhttp.open(options.type, u, true);
+          xmlhttp.send(null);
+        }else if(options.type == 'POST'){
+          xmlhttp.open(options.type, options.url, true);
+          xmlhttp.setRequestHeader("Content-Type", options.contentType);
+
+          var formStr = '';
+          var sp = '&';
+          
+          if(options.contentType == 'application/json'){
+            xmlhttp.setRequestHeader('accept', options.contentType)
+            formStr = options.data;
+          }else{
+            if(!options.data) return '';
+              var pairs = [];
+              for(var name in options.data){
+                  if(!options.data.hasOwnProperty(name)) 
+                    continue;
+                  if(typeof options.data[name] === 'function') 
+                    continue;
+
+                  var value = options.data[name].toString();
+                  name = encodeURIComponent(name.replace('%20','+'));
+                  value = encodeURIComponent(value.replace('%20','+'));
+                  pairs.push(name+'='+value);
+              }
+              formStr = pairs.join('&');
+          }
+
+          // xmlhttp.setRequestHeader("xbid",uuid);
+          
+          xmlhttp.send(formStr);
+
+        }
+
+
+        xmlHttpTimeout = setTimeout(ajaxTimeout , options.timeout * 1000);
+
+        function ajaxTimeout(){
+          xmlhttp.abort();
+          options.timeoutFn();
+        }
+
+      },
+
+      getsec : function(str){
+          
+        var str1=str.substring(1,str.length)*1;
+        var str2=str.substring(0,1);
+        if (str2=="s")
+        {
+              return str1*1000;
+        }
+        else if (str2=="h")
+        {
+            return str1*60*60*1000;
+        }
+        else if (str2=="d")
+        {
+            return str1*24*60*60*1000;
+        }
+          
+      },
+
+      addEvt: function(o, e, fn){
+        if(o.addEventListener){
+          o.addEventListener(e, fn);
+        }else if(o.attachEvent){
+          o.attachEvent('on' + e, fn);
+        }else{
+          return;
+        }
+      },
+
+      getFloat: function(v, n){
+        var val = v + "";
+
+        return val.substring(0, val.indexOf('.') + n);
+      },
+
+      getPath: function(){
+        var rootPath = location.host.indexOf('192.168') > -1 ? '' : location.protocol + '//' + location.host;
+
+        if(rootPath.lastIndexOf('/') === rootPath.length - 1){
+          return rootPath.substr(0, rootPath.length - 1);
+        }else{
+          return rootPath;
+        }
+      },
+
+      /**
+       * fmt: 时间格式
+       * datetime: 0时区的毫秒数
+       */
+      dateFormat: function (fmt, datetime) {
+        var offset = new Date().getTimezoneOffset() * 60 * 100;
+        var localTime = datetime + offset;
+        var date = new Date(localTime);
+        // console.log('offset = ' + offset, 'localTime = ' + localTime);
+        // console.log('zone = ' + new Date(datetime), 'local = ' + new Date(localTime));
+
+        var o = {
+          "Y+": date.getFullYear(),
+          "M+": date.getMonth() + 1, //月份
+          "d+": date.getDate(), //日
+          "h+": date.getHours(), //小时
+          "m+": date.getMinutes(), //分
+          "s+": date.getSeconds(), //秒
+          "q+": Math.floor((date.getMonth() + 3) / 3), //季度
+          "S": date.getMilliseconds() //毫秒
+        };
+
+        if (/(y+)/.test(fmt)){
+          fmt = fmt.replace(RegExp.$1, (date.getFullYear() + "").substr(4 - RegExp.$1.length));
+        }
+
+        for (var k in o){
+          if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        }
+        
+        return fmt;
+      }
+    };
+    </script>
+    <script type="text/javascript">
+    (function(){
+      var tipTit = document.getElementById('tip-title');
+
+      var tipBox = document.getElementById('tip-box');
+      var msg1 = document.getElementById('msg-1');
+      var msg2 = document.getElementById('msg-2');
+      var msg3 = document.getElementById('msg-3');
+      var msg4 = document.getElementById('msg-4');
+      var msg5 = document.getElementById('msg-5');
+      var msg6 = document.getElementById('msg-6');
+
+      var tools = {
+        getParas: function(name){
+          var url = location.search;
+          var theRequest = new Object();
+          if(url.indexOf('?') > -1){
+            var str = url.substr(1);
+            var strs = str.split('&');
+
+            for(var i = 0; i < strs.length; i++){
+              theRequest[strs[i].split('=')[0]] = decodeURI(strs[i].split('=')[1]);
+            }
+          }
+
+          return theRequest[name] ? theRequest[name] : '';
+        },
+        getLang: function(name){
+          var localeLang = window.navigator.language || window.navigator.userLanguage;
+          var localeArr = localeLang.split('-');
+          var newLang = '';
+          if(localeArr.length > 1){
+            localeArr[localeArr.length - 1] = 'r' + localeArr[localeArr.length - 1];
+          }
+          newLang = localeArr.join('-');
+
+          return this.getParas(name).split('-')[0] || 'en' || localeArr[0];
+        }
+      }
+
+      var lang = tools.getParas('lang') || 'en';
+
+      var setPage = function(data){
+        tipTit.innerHTML = data['title'];
+
+        // msg1.innerHTML = data['msg-1'];
+        msg2.innerHTML = data['msg-2'];
+        // msg3.innerHTML = data['msg-3'];
+        msg4.innerHTML = data['msg-10'];
+        msg5.innerHTML = data['msg-5'];
+        msg5.style.display = 'none';
+        // msg6.innerHTML = data['msg-6'];
+        
+        try{
+          tipBox.className = 'tip-box active';
+          tipTit.innerHTML = data['title2'];
+          msg4.innerHTML = data['msg-4'];
+          msg5.style.display = 'block';
+        }catch(e){
+          msg4.innerHTML = data['msg-10'];
+        }
+      }
+
+      var init = function(){
+
+        if(config.allLangs.indexOf(lang) < 0){
+          lang = config.defaultLang;
+        }else if(lang == 'ur'){
+          document.documentElement.className = 'direction-right';
+        }
+
+        setPage(langJson[lang]);
+      }
+
+      init();
+    })();
+    </script>
+  </body>
+</html>

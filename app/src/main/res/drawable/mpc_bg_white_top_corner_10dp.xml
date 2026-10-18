@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners
+        android:topLeftRadius="@dimen/mpc_dp_10"
+        android:topRightRadius="@dimen/mpc_dp_10"/>
+    <solid android:color="@color/mpc_main_bg_2"/>
+</shape>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/selector_list_item"
+    android:addStatesFromChildren="false"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x_dp_80"
+    android:textDirection="locale"
+    android:layoutDirection="locale">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/audio_dir_icon"
+        android:layout_width="@dimen/x_dp_56"
+        android:layout_height="@dimen/x_dp_56"
+        android:scaleType="fitXY"
+        android:layout_marginStart="@dimen/x_dp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/cx_sp_15"
+        android:textColor="@color/txt_primary"
+        android:gravity="start|center_vertical"
+        android:id="@+id/audio_dir_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginStart="@dimen/x_dp_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cb_audio_check"
+        app:layout_constraintStart_toEndOf="@+id/audio_dir_icon"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.userlabs.xshare.views.XCheckBox
+        android:id="@+id/cb_audio_check"
+        android:layout_width="52dp"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

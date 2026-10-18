@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:tag="layout/video_guide_dialog_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ViewStub
+        android:id="@+id/video_guide_step1_viewstub"
+        android:layout="@layout/video_guide_step1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ViewStub
+        android:id="@+id/video_guide_step2_viewstub"
+        android:layout="@layout/video_guide_step2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ViewStub
+        android:id="@+id/video_guide_step3_viewstub"
+        android:layout="@layout/video_guide_step3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ViewStub
+        android:id="@+id/video_guide_step4_viewstub"
+        android:layout="@layout/video_guide_step4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ViewStub
+        android:id="@+id/video_guide_step5_viewstub"
+        android:layout="@layout/video_guide_step5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ViewStub
+        android:id="@+id/video_guide_step6_viewstub"
+        android:layout="@layout/video_guide_step6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

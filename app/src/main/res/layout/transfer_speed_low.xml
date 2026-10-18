@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/tips_iv"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/bg_triangle_up_window_1_color"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg_window_1_color_with_line_corner_10"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginLeft="@dimen/x_dp_10"
+        android:layout_marginRight="@dimen/x_dp_10"
+        android:layout_marginHorizontal="@dimen/x_dp_10"
+        app:layout_constraintTop_toBottomOf="@+id/tips_iv">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            layout="@layout/auto_scroll_view_pager_layer"/>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/circles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/miui_location_layout"
+    android:paddingTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/xshare_text_size_large_greater"
+        android:textColor="@color/txt_primary"
+        android:gravity="center"
+        android:id="@+id/location_permission_dlg_step2_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/location_permission_text_1"
+        android:lineSpacingMultiplier="1.1"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/flag_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/cx_ic_location_premission_1"
+        android:layout_marginEnd="@dimen/cx_dp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_permission_dlg_step2_title"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/finger_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/x_ic_setting_grant"
+        app:layout_constraintEnd_toEndOf="@+id/flag_tv"
+        app:layout_constraintTop_toTopOf="@+id/flag_tv"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="@dimen/cx_dp_16"
+        app:layout_constraintTop_toBottomOf="@+id/finger_iv"
+        layout="@layout/my_bottom_sheet_dlg_btn_layout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

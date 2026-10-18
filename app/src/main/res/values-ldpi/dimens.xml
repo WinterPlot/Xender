@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mpc_dp_10">6.6667dp</dimen>
+    <dimen name="mpc_dp_130">86.6667dp</dimen>
+    <dimen name="mpc_dp_14">9.3333dp</dimen>
+    <dimen name="mpc_dp_150">100dp</dimen>
+    <dimen name="mpc_dp_16">10.6667dp</dimen>
+    <dimen name="mpc_dp_20">13.3333dp</dimen>
+    <dimen name="mpc_dp_24">16dp</dimen>
+    <dimen name="mpc_dp_240">160dp</dimen>
+    <dimen name="mpc_dp_30">20dp</dimen>
+    <dimen name="mpc_dp_40">26.6667dp</dimen>
+    <dimen name="mpc_dp_45">30.0001dp</dimen>
+    <dimen name="mpc_dp_48">32dp</dimen>
+    <dimen name="mpc_dp_5">3.3333dp</dimen>
+    <dimen name="mpc_dp_50">33.3333dp</dimen>
+    <dimen name="mpc_dp_60">40dp</dimen>
+    <dimen name="mpc_dp_64">42.6667dp</dimen>
+    <dimen name="mpc_dp_8">5.3333dp</dimen>
+    <dimen name="mpc_dp_96">64dp</dimen>
+    <dimen name="mpc_sp_14">9.3333sp</dimen>
+    <dimen name="mpc_sp_16">10.6667sp</dimen>
+</resources>

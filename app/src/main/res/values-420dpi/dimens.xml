@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ex_new_phone_name_size">50dp</dimen>
+    <dimen name="ex_new_phone_qr_height">260dp</dimen>
+    <dimen name="ex_new_phone_qr_size">180dp</dimen>
+    <dimen name="ex_new_phone_qr_weight">230dp</dimen>
+    <dimen name="x_dp_240">258dp</dimen>
+    <dimen name="x_dp_26">32dp</dimen>
+    <dimen name="x_dp_312">340dp</dimen>
+    <dimen name="x_dp_66">66dp</dimen>
+    <dimen name="xmp_30">30dp</dimen>
+    <dimen name="xmp_sp_16">16sp</dimen>
+    <dimen name="xmp_sp_24">24sp</dimen>
+</resources>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="CountryCodes">
+        <item>IN,+91,*India,INR</item>
+        <item>KE,+254,*Kenya,KES</item>
+        <item>AF,+93,Afghanistan,AFA</item>
+        <item>AL,+355,Albania,ALL</item>
+        <item>DZ,+213,Algeria,DZD</item>
+        <item>AD,+376,Andorra,FRF</item>
+        <item>AO,+244,Angola,AON</item>
+        <item>AR,+54,Argentina,ARP</item>
+        <item>AM,+374,Armenia,AMD</item>
+        <item>AU,+61,Australia,AUD</item>
+        <item>AT,+43,Austria,ATS</item>
+        <item>AZ,+994,Azerbaijan,AZM</item>
+        <item>BS,+1242,Bahamas,BSD</item>
+        <item>BH,+973,Bahrain,BHD</item>
+        <item>BD,+880,Bangladesh,BDT</item>
+        <item>BY,+375,Belarus,BYR</item>
+        <item>BE,+32,Belgium,BEF</item>
+        <item>BZ,+501,Belize,BZD</item>
+        <item>BJ,+229,Benin,XAF</item>
+        <item>BO,+591,Bolivia,BOB</item>
+        <item>BA,+387,Bosnia &amp; Herzegovina,BAK</item>
+        <item>BW,+267,Botswana,BWP</item>
+        <item>BR,+55,Brazil,BRL</item>
+        <item>BN,+673,Brunei,BND</item>
+        <item>BG,+359,Bulgaria,BGL</item>
+        <item>BF,+226,Burkina Faso,XOF</item>
+        <item>BI,+257,Burundi,BIF</item>
+        <item>KH,+855,Cambodia,KHR</item>
+        <item>CM,+237,Cameroon,XAF</item>
+        <item>CA,+1,Canada,CAD</item>
+        <item>CV,+238,Cape Verde,CVE</item>
+        <item>KY,+1345,Cayman Islands,KYD</item>
+        <item>CF,+236,Central African,XAF</item>
+        <item>TD,+235,Chad,XAF</item>
+        <item>CL,+56,Chile,CLP</item>
+        <item>CN,+86,China,CNY</item>
+        <item>CO,+57,Colombia,COP</item>
+        <item>KM,+269,Comoros,KMF</item>
+        <item>CR,+506,Costa Rica,CRC</item>
+        <item>HR,+385,Croatia,HRK</item>
+        <item>CW,+599,Curacao,ANG</item>
+        <item>CY,+357,Cyprus,CYP</item>
+        <item>CZ,+420,Czech Republic,CZK</item>
+        <item>CD,+243,Democratic Republic of the Congo,CDF</item>
+        <item>DK,+45,Denmark,DKK</item>
+        <item>DJ,+253,Djibouti,DJF</item>
+        <item>DM,+1,Dominica,XCD</item>
+        <item>DO,+1809,Dominican Republic,DOP</item>
+        <item>EC,+593,Ecuador,ECS</item>
+        <item>EG,+20,Egypt,EGP</item>
+        <item>SV,+503,El Salvador,SVC</item>
+        <item>GQ,+240,Equatorial Guinea,FCFA</item>
+        <item>EE,+372,Estonia,EEK</item>
+        <item>ET,+251,Ethiopia,ETB</item>
+        <item>FI,+358,Finland,FIM</item>
+        <item>FR,+33,France,FRF</item>
+        <item>GA,+241,Gabon,XAF</item>
+        <item>GM,+220,Gambia,GMD</item>
+        <item>GE,+995,Georgia,GEL</item>
+        <item>DE,+49,Germany,DEM</item>
+        <item>GH,+233,Ghana,GHC</item>
+        <item>GR,+30,Greece,EUR</item>
+        <item>GD,+1473,Grenada,XCD</item>
+        <item>GP,+590,Guadeloupe,EUR</item>
+        <item>GT,+502,Guatemala,GTQ</item>
+        <item>GN,+224,Guinea,GNF</item>
+        <item>GW,+245,Guinea-Bissau,FCFA</item>
+        <item>GY,+592,Guyana,GYD</item>
+        <item>HN,+504,Honduras,HNL</item>
+        <item>HK,+852,Hong Kong(China),HKS</item>
+        <item>HU,+36,Hungary,HUF</item>
+        <item>IS,+354,Iceland,ISK</item>
+        <item>IN,+91,India,INR</item>
+        <item>ID,+62,Indonesia,IDR</item>
+        <item>IQ,+964,Iraq,IQD</item>
+        <item>IE,+353,Ireland,IEP</item>
+        <item>IL,+972,Israel,ILS</item>
+        <item>IR,+98,Iran,IRR</item>
+        <item>IT,+39,Italy,ITL</item>
+        <item>CI,+225,Ivory Coast,FCFA</item>
+        <item>JM,+1876,Jamaica,JMD</item>
+        <item>JO,+962,Jordan,JOD</item>
+        <item>JP,+81,Japan,JPY</item>
+        <item>KZ,+7,Kazakhstan,KZT</item>
+        <item>KE,+254,Kenya,KES</item>
+        <item>XK,+383,Kosovo,EUR</item>
+        <item>KW,+965,Kuwait,KWD</item>
+        <item>KG,+996,Kyrgyzstan,KGS</item>
+        <item>LA,+856,Laos,LAK</item>
+        <item>LV,+371,Latvia,LVL</item>
+        <item>LB,+961,Lebanon,LBP</item>
+        <item>LS,+266,Lesotho,LSL</item>
+        <item>LR,+231,Liberia,LRK</item>
+        <item>LY,+218,Libya,LYD</item>
+        <item>LI,+423,Liechtenstein,CHF</item>
+        <item>LT,+370,Lithuania,LTL</item>
+        <item>LU,+352,Luxembourg,LUF</item>
+        <item>MO,+853,Macao(China),MOP</item>
+        <item>MK,+389,Macedonia,MKD</item>
+        <item>MG,+261,Madagascar,MGF</item>
+        <item>MW,+265,Malawi,MWK</item>
+        <item>MY,+60,Malaysia,MYR</item>
+        <item>MV,+960,Maldives,MVR</item>
+        <item>ML,+223,Mali,FCFA</item>
+        <item>MT,+356,Malta,MTL</item>
+        <item>MR,+222,Mauritania,MRO</item>
+        <item>MU,+230,Mauritius,MUR</item>
+        <item>MX,+52,Mexico,MXN</item>
+        <item>MD,+373,Moldova,MDL</item>
+        <item>MN,+976,Mongolia,MNT</item>
+        <item>ME,+382,Montenegro,EUR</item>
+        <item>MA,+212,Morocco,MAD</item>
+        <item>MZ,+258,Mozambique,MZM</item>
+        <item>MM,+95,Myanmar,BUK</item>
+        <item>NA,+264,Namibia,NAD</item>
+        <item>NP,+977,Nepal,NPR</item>
+        <item>NL,+31,Netherlands,NLG</item>
+        <item>NZ,+64,New Zealand,NZD</item>
+        <item>NI,+505,Nicaragua,NIO</item>
+        <item>NE,+227,Niger,FCFA</item>
+        <item>NG,+234,Nigeria,NGN</item>
+        <item>NO,+47,Norway,NOK</item>
+        <item>OM,+968,Oman,OMR</item>
+        <item>PK,+92,Pakistan,PRK</item>
+        <item>PS,+970,Palestine,NIS</item>
+        <item>PA,+507,Panama,PAB</item>
+        <item>PG,+675,Papua New Guinea,PGK</item>
+        <item>PE,+51,Peru,PEN</item>
+        <item>PH,+63,Philippines,PHP</item>
+        <item>PL,+48,Poland,PLN</item>
+        <item>PYF,+689,Polynesia,CFP</item>
+        <item>PT,+351,Portugal,PTE</item>
+        <item>PR,+1787,Puerto Rico,USD</item>
+        <item>QA,+974,Qatar,QAR</item>
+        <item>CG,+242,Republic of Congo,XAF</item>
+        <item>FJ,+679,Fiji Islands,FJD</item>
+        <item>RO,+40,Romania,ROL</item>
+        <item>RU,+7,Russia,SUR</item>
+        <item>RW,+250,Rwanda,RWF</item>
+        <item>KN,+1869,Saint Kitts and Nevis,XCD</item>
+        <item>LCA,+1758,Saint Lucia,XCD</item>
+        <item>MF,+590,Saint Martin,EUR</item>
+        <item>VC,+1784,Saint Vincent and the Grenadines,XCD</item>
+        <item>SA,+966,Saudi Arabia,SAR</item>
+        <item>SN,+221,Senegal,FCFA</item>
+        <item>RS,+381,Serbia,CSD</item>
+        <item>SC,+248,Seychelles,SCR</item>
+        <item>SL,+232,Sierra Leone,SLL</item>
+        <item>SG,+65,Singapore,SGD</item>
+        <item>SK,+421,Slovakia,SKK</item>
+        <item>SI,+386,Slovenia,SIT</item>
+        <item>SO,+252,Somalia,SOS</item>
+        <item>ZA,+27,South Africa,ZAR</item>
+        <item>KR,+82,Korea,KRW</item>
+        <item>ES,+34,Spain,ESP</item>
+        <item>LK,+94,Sri Lanka,LKR</item>
+        <item>SR,+597,Suriname,SRG</item>
+        <item>SZ,+268,Swaziland,SZL</item>
+        <item>SE,+46,Sweden,SEK</item>
+        <item>CH,+41,Switzerland,CHF</item>
+        <item>YK,+963,Syrian Arab Republic,SYP</item>
+        <item>TW,+886,Taiwan(China),TWD</item>
+        <item>TJ,+992,Tajikistan,TJS</item>
+        <item>TZ,+255,Tanzania,TZS</item>
+        <item>TH,+66,Thailand,THB</item>
+        <item>TG,+228,Togo,XOF</item>
+        <item>TT,+1868,Trinidad &amp; Tobago,TTD</item>
+        <item>TN,+216,Tunisia,TND</item>
+        <item>TR,+90,Turkey,TRL</item>
+        <item>TM,+993,Turkmenistan,TMM</item>
+        <item>UG,+256,Uganda,UGX</item>
+        <item>UA,+380,Ukraine,UAH</item>
+        <item>AE,+971,United Arab Emirates,AED</item>
+        <item>GB,+44,United Kingdom,GBP</item>
+        <item>US,+1,United States,USD</item>
+        <item>UY,+598,Uruguay,UYU</item>
+        <item>UZ,+998,Uzbekistan,UZS</item>
+        <item>VU,+678,Vanuatu,VUV</item>
+        <item>VE,+58,Venezuela,VEB</item>
+        <item>VN,+84,Vietnam,VND</item>
+        <item>VG,+1284,Virgin Islands,USD</item>
+        <item>YE,+967,Yemen,YER</item>
+        <item>ZM,+260,Zambia,ZMK</item>
+        <item>ZW,+263,Zimbabwe,ZWD</item>
+    </array>
+    <array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </array>
+    <array name="reverb_array">
+        <item>@string/reverb_preset_none</item>
+        <item>@string/reverb_preset_smallroom</item>
+        <item>@string/reverb_preset_mediumroom</item>
+        <item>@string/reverb_preset_largeroom</item>
+        <item>@string/reverb_preset_mediumhall</item>
+        <item>@string/reverb_preset_largehall</item>
+        <item>@string/reverb_preset_plate</item>
+    </array>
+    <array name="sleep_item_array">
+        <item>@string/x_5m</item>
+        <item>@string/x_15m</item>
+        <item>@string/x_30m</item>
+        <item>@string/x_1h</item>
+        <item>@string/x_end_queue</item>
+    </array>
+    <array name="speed_item_array">
+        <item>0.5X</item>
+        <item>0.75X</item>
+        <item>1.0X</item>
+        <item>1.5X</item>
+        <item>2.0X</item>
+    </array>
+    <array name="support_languages">
+        <item>am</item>
+        <item>ar</item>
+        <item>bg</item>
+        <item>bn</item>
+        <item>cs</item>
+        <item>de</item>
+        <item>el</item>
+        <item>en</item>
+        <item>es</item>
+        <item>fa</item>
+        <item>fil</item>
+        <item>fr</item>
+        <item>gu</item>
+        <item>ha</item>
+        <item>hi</item>
+        <item>hu</item>
+        <item>ig</item>
+        <item>in</item>
+        <item>it</item>
+        <item>ja</item>
+        <item>ko</item>
+        <item>ml</item>
+        <item>mr</item>
+        <item>ms</item>
+        <item>my</item>
+        <item>nl</item>
+        <item>om</item>
+        <item>pa</item>
+        <item>pl</item>
+        <item>ps</item>
+        <item>pt</item>
+        <item>ro</item>
+        <item>sd</item>
+        <item>sv</item>
+        <item>sw</item>
+        <item>th</item>
+        <item>tr</item>
+        <item>uk</item>
+        <item>ur</item>
+        <item>vi</item>
+        <item>yo</item>
+        <item>zh-HK</item>
+        <item>zh-TW</item>
+    </array>
+    <array name="vp_speed_item_array">
+        <item>0.5X</item>
+        <item>0.75X</item>
+        <item>1.0X</item>
+        <item>1.5X</item>
+        <item>2.0X</item>
+    </array>
+    <array name="weline_tab_list">
+        <item>@string/text_null</item>
+        <item>@string/image_gallery</item>
+        <item>@string/transfer</item>
+    </array>
+    <array name="whatsapp_service_list">
+        <item>8929254383</item>
+        <item>8588813354</item>
+    </array>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:fitsSystemWindows="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mpc_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mpc_dp_48"
+        android:tintMode="src_atop"
+        app:contentInsetStartWithNavigation="0dp"
+        app:titleTextColor="@color/mpc_white"
+        style="?attr/actionBarStyle"/>
+    <androidx.fragment.app.FragmentContainerView
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:id="@+id/mpc_fragment_container"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_mpc_main"/>
+</LinearLayout>

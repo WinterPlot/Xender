@@ -1,0 +1,11 @@
+package androidx.camera.camera2.pipe;
+
+/* JADX INFO: compiled from: r8-map-id-7c39405478b97556541940d8ec6ed68be9fb10fdbac58530bd0e41fdc7ed0e30 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract /* synthetic */ class v0 {
+    public static final /* synthetic */ int a = 0;
+
+    static {
+        w0.a aVar = w0.G;
+    }
+}

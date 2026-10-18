@@ -1,0 +1,40 @@
+name: Build XShare (collect compile log)
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: android-actions/setup-android@v3
+
+      - name: Install SDK platform 36
+        run: |
+          yes | sdkmanager "platforms;android-36" "build-tools;36.0.0" || true
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: 8.14.3
+
+      - name: Compile (Java only, full error list)
+        run: gradle :app:compileDebugJavaWithJavac --no-daemon --continue > build.log 2>&1 || true
+
+      - name: Show summary
+        run: |
+          grep -c "error:" build.log || true
+          tail -n 40 build.log
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: build-log
+          path: build.log

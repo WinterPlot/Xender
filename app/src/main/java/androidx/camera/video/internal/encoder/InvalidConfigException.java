@@ -1,0 +1,17 @@
+package androidx.camera.video.internal.encoder;
+
+/* JADX INFO: compiled from: r8-map-id-7c39405478b97556541940d8ec6ed68be9fb10fdbac58530bd0e41fdc7ed0e30 */
+/* JADX INFO: loaded from: classes.dex */
+public class InvalidConfigException extends Exception {
+    public InvalidConfigException(String str) {
+        super(str);
+    }
+
+    public InvalidConfigException(String str, Throwable th) {
+        super(str, th);
+    }
+
+    public InvalidConfigException(Throwable th) {
+        super(th);
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/xshare_text_size_smaller"
+    android:textColor="@color/txt_secondary"
+    android:gravity="start|center_vertical"
+    android:id="@+id/condition_des_tv"
+    android:background="@drawable/selector_list_item"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="40dp"
+    android:paddingEnd="@dimen/cx_dp_16"
+    android:paddingVertical="5dp"/>

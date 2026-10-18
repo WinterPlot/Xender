@@ -1,0 +1,17 @@
+package com.google.android.gms.internal.measurement;
+
+import java.util.concurrent.Callable;
+
+/* JADX INFO: compiled from: r8-map-id-7c39405478b97556541940d8ec6ed68be9fb10fdbac58530bd0e41fdc7ed0e30 */
+/* JADX INFO: loaded from: classes5.dex */
+final /* synthetic */ class ko implements Callable {
+    static final /* synthetic */ ko a = new ko();
+
+    private /* synthetic */ ko() {
+    }
+
+    @Override // java.util.concurrent.Callable
+    public final /* synthetic */ Object call() {
+        return null;
+    }
+}

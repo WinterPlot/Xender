@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/vp_white"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:textDirection="locale"
+    android:layoutDirection="locale">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vp_dp_114">
+        <TextView
+            android:textSize="@dimen/vp_sp_14"
+            android:textColor="@color/vp_222"
+            android:ellipsize="end"
+            android:gravity="start|center_vertical"
+            android:id="@+id/tvPlayerName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:singleLine="false"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/vp_dp_10"
+            style="@style/vp_text_style_sans_medium_normal"/>
+    </LinearLayout>
+    <ImageView
+        android:background="@color/vp_999"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="86dp">
+        <ImageView
+            android:id="@+id/ivPlay"
+            android:layout_width="@dimen/vp_dp_40"
+            android:layout_height="@dimen/vp_dp_40"/>
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/vp_dp_40"
+            android:layout_height="@dimen/vp_dp_40"
+            android:scaleType="center"
+            android:layout_marginStart="@dimen/vp_dp_10"
+            app:tint="@color/vp_222"/>
+    </LinearLayout>
+</LinearLayout>

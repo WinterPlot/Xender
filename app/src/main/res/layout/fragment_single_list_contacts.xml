@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_gravity="top"
+        android:id="@+id/all_contacts_layer"
+        android:background="@drawable/selector_list_item"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x_dp_50">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/cx_sp_15"
+            android:textColor="@color/txt_primary"
+            android:id="@+id/all_contacts_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x_dp_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <com.userlabs.xshare.views.XCheckBox
+            android:id="@+id/all_contacts_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:layout_marginEnd="@dimen/x_dp_16"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:id="@+id/sticky_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/x_dp_50">
+        <include layout="@layout/recyclerview_layout"/>
+    </FrameLayout>
+</FrameLayout>

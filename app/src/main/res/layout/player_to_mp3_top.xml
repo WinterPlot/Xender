@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_window_2_color_round_corner"
+    android:addStatesFromChildren="false"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x_dp_40"
+    android:layout_marginLeft="@dimen/x_dp_16"
+    android:layout_marginTop="@dimen/x_dp_8"
+    android:layout_marginRight="@dimen/x_dp_16"
+    android:layout_marginBottom="@dimen/x_dp_8"
+    android:textDirection="locale"
+    android:layoutDirection="locale"
+    android:layout_marginHorizontal="@dimen/x_dp_16"
+    android:layout_marginVertical="@dimen/x_dp_8">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/xshare_text_size_medium"
+        android:textColor="@color/txt_primary"
+        android:textColorHint="@color/txt_secondary"
+        android:id="@+id/player_mp3_icon_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x_dp_16"
+        android:layout_marginRight="@dimen/x_dp_16"
+        android:hint="@string/select_video_to_mp3_title"
+        android:layout_marginHorizontal="@dimen/x_dp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/player_mp3_img_convert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/player_mp3_img_convert"
+        android:background="@drawable/bg_primary_round_corner"
+        android:layout_width="@dimen/x_dp_120"
+        android:layout_height="@dimen/x_dp_32"
+        android:src="@drawable/x_svg_tomp3_guide"
+        android:layout_marginEnd="@dimen/x_dp_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

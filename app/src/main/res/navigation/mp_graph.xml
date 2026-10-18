@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" app:startDestination="@+id/nav_player">
+    <fragment
+        android:label="MusicPlayerFragment"
+        android:name="com.userlabs.xshare.audioplayer.exo.ui.XMPlayerFragment"
+        android:id="@+id/nav_player">
+        <action
+            android:id="@+id/actionToEq"
+            app:destination="@+id/nav_equalizer"
+            app:launchSingleTop="true"/>
+    </fragment>
+    <fragment
+        android:label="XMpEqualizerFragment"
+        android:name="com.userlabs.xshare.audioplayer.exo.ui.XMpEqualizerFragment"
+        android:id="@+id/nav_equalizer"/>
+</navigation>

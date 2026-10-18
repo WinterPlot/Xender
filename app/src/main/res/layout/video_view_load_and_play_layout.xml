@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/black"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textDirection="locale"
+    android:layoutDirection="locale">
+    <VideoView
+        android:layout_gravity="center"
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/video_loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ProgressBar.Loading"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center"
+        android:id="@+id/movie_play"
+        android:background="@drawable/bg_mask_shadow_oval"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/cx_svg_play"/>
+</FrameLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/nougat_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/xshare_text_size_small"
+        android:textColor="@color/txt_primary"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/nougat_open_ap_warn_title"
+        style="@style/bold_text_style"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/xshare_text_size_medium"
+        android:textColor="@color/txt_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cx_dp_16"
+        android:text="@string/nougat_open_ap_warn_content"
+        android:lineSpacingMultiplier="1.1"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cx_bg_open_ap"
+        android:scaleType="fitXY"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="@dimen/cx_dp_16"
+        layout="@layout/my_bottom_sheet_dlg_btn_layout"/>
+</LinearLayout>

@@ -1,0 +1,24 @@
+package androidx.core.view.animation;
+
+import android.graphics.Path;
+import android.view.animation.Interpolator;
+import android.view.animation.PathInterpolator;
+
+/* JADX INFO: compiled from: r8-map-id-7c39405478b97556541940d8ec6ed68be9fb10fdbac58530bd0e41fdc7ed0e30 */
+/* JADX INFO: loaded from: classes4.dex */
+public final class a {
+    private a() {
+    }
+
+    public static Interpolator create(Path path) {
+        return new PathInterpolator(path);
+    }
+
+    public static Interpolator create(float f, float f2) {
+        return new PathInterpolator(f, f2);
+    }
+
+    public static Interpolator create(float f, float f2, float f3, float f4) {
+        return new PathInterpolator(f, f2, f3, f4);
+    }
+}

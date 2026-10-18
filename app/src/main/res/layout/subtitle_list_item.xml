@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/vp_selector_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/vp_dp_56"
+    android:textDirection="locale"
+    android:layoutDirection="locale">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/subtitle_iv"
+        android:layout_width="@dimen/vp_dp_24"
+        android:layout_height="@dimen/vp_dp_24"
+        android:scaleType="center"
+        android:layout_marginStart="@dimen/vp_dp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:id="@+id/subtitle_name"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/vp_dp_16"
+        android:layout_marginRight="@dimen/vp_dp_16"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_marginHorizontal="@dimen/vp_dp_16"
+        app:layout_constraintEnd_toStartOf="@+id/subtitle_check"
+        app:layout_constraintStart_toEndOf="@+id/subtitle_iv"
+        style="@style/vp_BottomSheetDialog_Text"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/subtitle_check"
+        android:visibility="visible"
+        android:layout_width="@dimen/vp_dp_40"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

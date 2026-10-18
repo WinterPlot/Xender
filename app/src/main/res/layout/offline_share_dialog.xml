@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/x_share_dialog_layout"
+    android:background="@drawable/bg_window_1_color_top_corner_20"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:gravity="center"
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x_dp_56"
+        android:text="@string/share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/BottomSheetDialog_Title"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="end|center_vertical"
+        android:id="@+id/share_dialog_cancel"
+        android:layout_width="@dimen/x_dp_56"
+        android:layout_height="@dimen/x_dp_56"
+        android:src="@drawable/svg_ic_cancel"
+        android:scaleType="centerInside"
+        android:tint="@color/x_222_or_fff"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dialog_title"/>
+    <View
+        android:id="@+id/share_divider_line"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_title"
+        style="@style/BottomSheetDialog_Line"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/dialog_share_container"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_space"
+        app:layout_constraintTop_toBottomOf="@+id/share_divider_line"/>
+    <Space
+        android:id="@+id/bottom_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x_dp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

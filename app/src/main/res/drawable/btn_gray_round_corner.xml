@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="@android:integer/config_shortAnimTime">
+    <item
+        android:state_enabled="true"
+        android:state_pressed="true">
+        <shape>
+            <solid android:color="#204cb1"/>
+            <corners android:radius="1in"/>
+            <padding
+                android:left="@dimen/cx_dp_8"
+                android:top="@dimen/cx_dp_4"
+                android:right="@dimen/cx_dp_8"
+                android:bottom="@dimen/cx_dp_4"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/btn_disable"/>
+            <corners android:radius="1in"/>
+            <padding
+                android:left="@dimen/cx_dp_8"
+                android:top="@dimen/cx_dp_4"
+                android:right="@dimen/cx_dp_8"
+                android:bottom="@dimen/cx_dp_4"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape>
+            <solid android:color="#f0f0f0"/>
+            <corners android:radius="1in"/>
+            <padding
+                android:left="@dimen/cx_dp_8"
+                android:top="@dimen/cx_dp_4"
+                android:right="@dimen/cx_dp_8"
+                android:bottom="@dimen/cx_dp_4"/>
+        </shape>
+    </item>
+</selector>

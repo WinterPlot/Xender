@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/vp_bottom_dialog_with_close_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:gravity="center"
+        android:id="@+id/vp_dialog_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vp_dp_56"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/vp_BottomSheetDialog_Title"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/vp_dialog_close_btn"
+        android:layout_width="@dimen/vp_dp_56"
+        android:layout_height="@dimen/vp_dp_56"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/vp_dialog_text_color"/>
+    <View
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/vp_dialog_title_tv"
+        style="@style/vp_BottomSheetDialog_Line"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vp_dialog_list"
+        android:focusable="true"
+        android:visibility="visible"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        app:layout_constraintTop_toBottomOf="@+id/vp_dialog_title_tv"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

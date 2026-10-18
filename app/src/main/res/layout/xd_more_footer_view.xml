@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:gravity="center"
+        android:id="@+id/recommend_ss_tv"
+        android:background="@drawable/btn_primary_round_corner"
+        android:paddingTop="@dimen/x_dp_6"
+        android:paddingBottom="@dimen/x_dp_6"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x_dp_36"
+        android:layout_marginTop="@dimen/x_dp_16"
+        android:layout_marginBottom="@dimen/x_dp_16"
+        android:text="@string/more"
+        android:paddingStart="@dimen/x_dp_36"
+        android:paddingEnd="@dimen/x_dp_56"
+        android:paddingVertical="@dimen/x_dp_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/button_text_style_bold"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:background="@drawable/bg_window_1_color_oval"
+        android:padding="@dimen/x_dp_5"
+        android:layout_width="@dimen/x_dp_30"
+        android:layout_height="@dimen/x_dp_30"
+        android:src="@drawable/cx_svg_back"
+        android:scaleType="center"
+        android:scaleX="-1"
+        android:layout_marginEnd="@dimen/x_dp_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/recommend_ss_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/primary"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

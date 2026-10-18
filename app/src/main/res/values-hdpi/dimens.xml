@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="camera_capture_size">240dp</dimen>
+    <dimen name="camera_top_margin">168dp</dimen>
+    <dimen name="mpc_dp_10">8.8889dp</dimen>
+    <dimen name="mpc_dp_130">115.5556dp</dimen>
+    <dimen name="mpc_dp_14">12.4444dp</dimen>
+    <dimen name="mpc_dp_150">133.3333dp</dimen>
+    <dimen name="mpc_dp_16">14.2222dp</dimen>
+    <dimen name="mpc_dp_20">17.7778dp</dimen>
+    <dimen name="mpc_dp_24">21.3333dp</dimen>
+    <dimen name="mpc_dp_240">213.3333dp</dimen>
+    <dimen name="mpc_dp_30">26.6667dp</dimen>
+    <dimen name="mpc_dp_40">35.5556dp</dimen>
+    <dimen name="mpc_dp_45">40.0001dp</dimen>
+    <dimen name="mpc_dp_48">42.6667dp</dimen>
+    <dimen name="mpc_dp_5">4.4444dp</dimen>
+    <dimen name="mpc_dp_50">44.4444dp</dimen>
+    <dimen name="mpc_dp_60">53.3333dp</dimen>
+    <dimen name="mpc_dp_64">56.8889dp</dimen>
+    <dimen name="mpc_dp_8">7.1111dp</dimen>
+    <dimen name="mpc_dp_96">85.3333dp</dimen>
+    <dimen name="mpc_sp_14">12.4444sp</dimen>
+    <dimen name="mpc_sp_16">14.2222sp</dimen>
+    <dimen name="x_dp_240">210dp</dimen>
+    <dimen name="x_dp_312">280dp</dimen>
+    <dimen name="x_dp_66">60dp</dimen>
+    <dimen name="xmp_30">10dp</dimen>
+    <dimen name="xmp_sp_16">12sp</dimen>
+    <dimen name="xmp_sp_24">18sp</dimen>
+</resources>

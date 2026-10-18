@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/x_drawer_me_item"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/x_dp_100">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/drawer_avatar"
+        android:layout_width="@dimen/x_dp_60"
+        android:layout_height="@dimen/x_dp_60"
+        android:layout_marginStart="@dimen/x_dp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/xshare_text_size_large_greater"
+        android:textColor="@color/txt_primary"
+        android:id="@+id/drawer_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/x_dp_6"
+        app:layout_constraintBottom_toBottomOf="@+id/drawer_avatar"
+        app:layout_constraintStart_toEndOf="@+id/drawer_avatar"
+        app:layout_constraintTop_toTopOf="@+id/drawer_avatar"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/drawer_me_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x_dp_10"
+        android:layout_marginRight="@dimen/x_dp_10"
+        android:tint="@color/x_222_or_fff"
+        android:layout_marginHorizontal="@dimen/x_dp_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/drawer_nickname"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

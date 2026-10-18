@@ -1,0 +1,15 @@
+package org.apache.commons.io.function;
+
+import java.io.IOException;
+import java.util.function.BiFunction;
+
+/* JADX INFO: compiled from: r8-map-id-7c39405478b97556541940d8ec6ed68be9fb10fdbac58530bd0e41fdc7ed0e30 */
+/* JADX INFO: loaded from: classes6.dex */
+@FunctionalInterface
+public interface h<T, U, R> {
+    <V> h<T, U, V> andThen(t<? super R, ? extends V> tVar);
+
+    R apply(T t, U u) throws IOException;
+
+    BiFunction<T, U, R> asBiFunction();
+}

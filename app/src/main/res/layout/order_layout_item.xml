@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/order_title_tv"
+    android:paddingLeft="@dimen/x_dp_16"
+    android:paddingRight="@dimen/x_dp_16"
+    android:layout_width="match_parent"
+    android:singleLine="true"
+    android:drawablePadding="8dp"
+    android:paddingHorizontal="@dimen/x_dp_16"
+    style="@style/music_order_text_view_style"/>

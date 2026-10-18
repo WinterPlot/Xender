@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.userlabs.xshare.views.XFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <com.userlabs.xshare.views.CenterRippleView
+        android:layout_gravity="center"
+        android:id="@+id/send_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center"
+        android:id="@+id/send_avatar"
+        android:layout_width="@dimen/x_dp_72"
+        android:layout_height="@dimen/x_dp_72"
+        android:scaleType="fitXY"/>
+    <ViewStub
+        android:layout_gravity="bottom"
+        android:id="@+id/send_high_speed_view_step"
+        android:layout="@layout/high_speed_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x_dp_40"/>
+</com.userlabs.xshare.views.XFrameLayout>

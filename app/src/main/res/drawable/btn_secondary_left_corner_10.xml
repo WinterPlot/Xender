@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="@android:integer/config_shortAnimTime">
+    <item
+        android:state_enabled="true"
+        android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/secondary_pressed"/>
+            <corners
+                android:topLeftRadius="@dimen/x_dp_10"
+                android:bottomLeftRadius="@dimen/x_dp_10"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/btn_disable"/>
+            <corners
+                android:topLeftRadius="@dimen/x_dp_10"
+                android:bottomLeftRadius="@dimen/x_dp_10"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape>
+            <solid android:color="@color/secondary"/>
+            <corners
+                android:topLeftRadius="@dimen/x_dp_10"
+                android:bottomLeftRadius="@dimen/x_dp_10"/>
+        </shape>
+    </item>
+</selector>

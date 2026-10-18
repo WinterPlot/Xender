@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:id="@+id/history_count_layout"
+    android:background="?attr/actionBarItemBackground"
+    android:layout_width="@dimen/x_dp_50"
+    android:layout_height="@dimen/x_dp_48">
+    <com.userlabs.xshare.views.HistoryPromptProgress
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/history_tab"
+        android:visibility="invisible"
+        android:layout_width="27dp"
+        android:layout_height="27dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

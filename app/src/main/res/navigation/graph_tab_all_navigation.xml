@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" app:startDestination="@+id/pl_tab_all_fragment">
+    <fragment
+        android:label="pl_all"
+        android:name="com.userlabs.xshare.playlist.fragment.PLTabAllAudioFragment"
+        android:id="@+id/pl_tab_all_fragment"/>
+    <fragment
+        android:label="pl_search"
+        android:name="com.userlabs.xshare.playlist.search.PLTabSearchFragment"
+        android:id="@+id/pl_tab_search_fragment"/>
+</navigation>

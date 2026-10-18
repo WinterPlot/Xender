@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" app:startDestination="@+id/x_navigation_transfer">
+    <fragment
+        android:label="@string/x_bottom_tab_music"
+        android:name="com.userlabs.xshare.playlist.XPlayListMainFragment"
+        android:id="@+id/x_navigation_player"/>
+    <fragment
+        android:label="@string/x_bottom_tab_video_ai"
+        android:name="com.userlabs.xshare.ui.fragment.XVideoAIMainFragment"
+        android:id="@+id/x_navigation_video_ai"/>
+    <fragment
+        android:label="@null"
+        android:name="com.userlabs.xshare.ui.fragment.XShareMainFragment"
+        android:id="@+id/x_navigation_transfer"/>
+    <fragment
+        android:label="@string/x_bottom_tab_photo_ai"
+        android:name="com.userlabs.xshare.ui.fragment.XPhotoAIMainFragment"
+        android:id="@+id/x_navigation_photo_ai"/>
+    <fragment
+        android:label="@string/x_bottom_tab_social"
+        android:name="com.userlabs.xshare.social.fragment.XSocialMainFragment"
+        android:id="@+id/x_navigation_social"/>
+</navigation>

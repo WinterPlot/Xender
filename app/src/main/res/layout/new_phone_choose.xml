@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/do_choose_layer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/exchange_grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_gravity="bottom"
+        android:id="@+id/cl_permission_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:enabled="false"
+        android:textColor="@color/txt_white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/btn_send_request"
+        android:background="@drawable/btn_primary_round_corner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="@dimen/ex_dp_16"
+        android:text="@string/exchange_import_datas"
+        style="@style/cx_button_text_style_bold"/>
+</LinearLayout>

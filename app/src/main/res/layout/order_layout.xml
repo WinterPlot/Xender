@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="top|center_horizontal"
+    android:orientation="horizontal"
+    android:id="@+id/order_layer"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x_dp_32"
+    android:layout_marginLeft="@dimen/x_dp_32"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="@dimen/x_dp_32"
+    android:layoutDirection="ltr"
+    android:layout_marginHorizontal="@dimen/x_dp_32"/>

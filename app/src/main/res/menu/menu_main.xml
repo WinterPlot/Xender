@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_game"
+        android:visible="false"
+        android:orderInCategory="79"
+        android:title="@string/app_name"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/svg_right_connect_pc_big"
+        android:id="@+id/action_guide"
+        android:orderInCategory="110"
+        android:title="@string/app_name"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_upgrade"
+        android:orderInCategory="120"
+        android:title="@string/dlg_upgrade"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_add"
+        android:orderInCategory="140"
+        android:title="@string/more"
+        app:showAsAction="always"/>
+</menu>

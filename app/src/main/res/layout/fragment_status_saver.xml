@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.userlabs.xshare.views.XFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x_dp_12"
+        android:layout_marginTop="@dimen/x_dp_60"
+        android:layout_marginRight="@dimen/x_dp_12"
+        android:layout_marginBottom="@dimen/x_dp_72"
+        android:layout_marginHorizontal="@dimen/x_dp_12"
+        layout="@layout/recyclerview_layout"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:id="@+id/connect_status_btn"
+        android:background="@drawable/btn_primary_round_corner"
+        android:paddingLeft="@dimen/x_dp_16"
+        android:paddingRight="@dimen/x_dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x_dp_40"
+        android:layout_marginLeft="@dimen/x_dp_16"
+        android:layout_marginRight="@dimen/x_dp_16"
+        android:layout_marginBottom="@dimen/x_dp_16"
+        android:text="@string/status_connect"
+        android:layout_marginHorizontal="@dimen/x_dp_16"
+        android:paddingHorizontal="@dimen/x_dp_16"
+        style="@style/button_text_style_bold"/>
+</com.userlabs.xshare.views.XFrameLayout>

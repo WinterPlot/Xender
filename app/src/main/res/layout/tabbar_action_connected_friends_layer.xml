@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <com.userlabs.xshare.views.ConnectedFriendsItemView
+        android:orientation="horizontal"
+        android:id="@+id/connected_friends_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"/>
+</HorizontalScrollView>

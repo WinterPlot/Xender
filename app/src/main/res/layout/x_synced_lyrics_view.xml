@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.userlabs.xshare.audioplayer.lyrics.view.XSyncedLyricsView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mp_synced_lyrics_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:lrcAnimationDuration="1000"
+    app:lrcCurrentTextColor="@color/txt_white"
+    app:lrcDividerHeight="@dimen/x_dp_20"
+    app:lrcNormalTextColor="@color/x_78_white"
+    app:lrcNormalTextSize="@dimen/xshare_text_size_large_greater"
+    app:lrcPadding="@dimen/x_dp_16"
+    app:lrcTextGravity="center"
+    app:lrcTextSize="@dimen/xshare_text_size_large_greater"
+    app:lrcTimeTextColor="@color/txt_white"
+    app:lrcTimelineColor="@color/txt_white"
+    app:lrcTimelineTextColor="@color/secondary"/>

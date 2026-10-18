@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" app:startDestination="@+id/pl_addsongs_fragment">
+    <fragment
+        android:label="pl_addsongs_all"
+        android:name="com.userlabs.xshare.playlist.fragment.PLAddSongsFragment"
+        android:id="@+id/pl_addsongs_fragment"/>
+    <fragment
+        android:label="pl_addsongs_search"
+        android:name="com.userlabs.xshare.playlist.search.PLAddSongsSearchFragment"
+        android:id="@+id/pl_addsongs_search"/>
+</navigation>

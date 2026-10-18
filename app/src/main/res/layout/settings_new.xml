@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.userlabs.xshare.views.XLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:tag="layout/settings_new_0"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x_dp_48"
+        android:tintMode="src_atop"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:titleTextAppearance="@style/toolbar_text_style_bold"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/settings_rl"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.userlabs.xshare.views.XLinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/import_complete"
+    android:background="@color/app_window_bg"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ex_dp_50"
+        android:src="@drawable/ex_ic_exchange_item_selected"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/ex_sp_16"
+        android:textColor="@color/txt_primary"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ex_dp_20"
+        android:text="@string/ex_exchange_success"
+        style="@style/ex_text_style_bold"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/completed_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/ex_dp_40"
+        android:layout_marginBottom="@dimen/cx_dp_24"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/import_complete_btn"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <Button
+        android:textColor="@color/txt_white"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/import_complete_btn"
+        android:background="@drawable/btn_primary_round_corner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ex_dp_48"
+        android:layout_margin="@dimen/cx_dp_24"
+        android:text="@string/exchangephone_done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/cx_button_text_style_bold"/>
+</LinearLayout>

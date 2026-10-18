@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/x_dp_80"
+    android:paddingTop="@dimen/x_dp_10"
+    android:paddingRight="@dimen/x_dp_80"
+    android:paddingBottom="@dimen/x_dp_10"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x_dp_50"
+    android:textDirection="locale"
+    android:layoutDirection="locale"
+    android:paddingHorizontal="@dimen/x_dp_80"
+    android:paddingVertical="@dimen/x_dp_10">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:background="@drawable/bg_window_2_color_round_corner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x_dp_30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/xshare_text_size_medium"
+        android:textColor="@color/txt_secondary"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="@dimen/x_dp_32"
+        android:paddingRight="@dimen/x_dp_32"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x_dp_30"
+        android:text="@string/more"
+        android:singleLine="true"
+        android:drawablePadding="@dimen/x_dp_5"
+        android:drawableEnd="@drawable/svg_more_arrow"
+        android:paddingHorizontal="@dimen/x_dp_32"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

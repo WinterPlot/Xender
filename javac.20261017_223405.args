@@ -1,0 +1,9 @@
+-proc:none
+-nowarn
+-Xmaxerrs
+1000000
+-Xmaxwarns
+0
+-d
+/tmp/gen_stub_out/cls
+@/tmp/gen_stub_out/files.txt

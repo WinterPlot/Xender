@@ -1,0 +1,50 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.userlabs.xshare'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'com.userlabs.xshare'
+        minSdk 23
+        targetSdk 36
+        versionCode 1000310
+        versionName '19.0.0.prime'
+        multiDexEnabled true   // ~4,300 recovered classes exceed the single-dex limit
+    }
+
+    sourceSets {
+        main {
+            // Generated placeholders for classes that were missing from the decompile
+            // (see tools/gen_stubs.py). Remove this line once the real classes are recovered.
+            java.srcDirs += 'src/stubs/java'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+
+    packaging {
+        resources {
+            excludes += ['META-INF/*.version', 'META-INF/DEPENDENCIES', 'META-INF/LICENSE*', 'META-INF/NOTICE*']
+        }
+        jniLibs {
+            useLegacyPackaging = true
+        }
+    }
+}
+
+// Decompiled source is not guaranteed to compile; see BUILD_BLOCKERS.md for what remains.
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.compilerArgs += ['-Xmaxerrs', '10000', '-nowarn']
+}

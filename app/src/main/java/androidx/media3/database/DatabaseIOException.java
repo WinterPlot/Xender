@@ -1,0 +1,16 @@
+package androidx.media3.database;
+
+import android.database.SQLException;
+import java.io.IOException;
+
+/* JADX INFO: compiled from: r8-map-id-7c39405478b97556541940d8ec6ed68be9fb10fdbac58530bd0e41fdc7ed0e30 */
+/* JADX INFO: loaded from: classes.dex */
+public final class DatabaseIOException extends IOException {
+    public DatabaseIOException(SQLException sQLException) {
+        super(sQLException);
+    }
+
+    public DatabaseIOException(SQLException sQLException, String str) {
+        super(str, sQLException);
+    }
+}

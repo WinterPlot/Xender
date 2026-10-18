@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_window_1_color_line_top_corner_8"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x_dp_80">
+    <include layout="@layout/history_progress_sender_nocard_item"/>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#19000000"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="end|top"
+        android:height="@dimen/x_dp_20"
+        android:width="@dimen/x_dp_20"
+        android:drawable="@drawable/svg_checkbox_checked"
+        android:top="@dimen/x_dp_4"
+        android:end="@dimen/x_dp_4"/>
+</layer-list>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="@+id/x_pl_add_songs"
+    android:background="@drawable/bg_window_2_color_round_corner"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x_dp_40"
+    android:layout_marginLeft="@dimen/x_dp_40"
+    android:layout_marginTop="@dimen/x_dp_20"
+    android:layout_marginRight="@dimen/x_dp_40"
+    android:layout_marginBottom="@dimen/x_dp_20"
+    android:layout_marginHorizontal="@dimen/x_dp_40"
+    android:layout_marginVertical="@dimen/x_dp_20">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/svg_playlist_add_songs"
+        android:layout_marginEnd="@dimen/x_dp_10"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/xshare_text_size_large"
+        android:textColor="@color/primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x_play_list_add_songs"
+        style="@style/cx_button_text_style_bold"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

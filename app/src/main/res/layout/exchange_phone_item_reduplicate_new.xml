@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.userlabs.xshare.views.XConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/app_window_bg"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/ex_toolbar"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/ex_dp_48"
+        layout="@layout/new_phone_choose"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/ex_dp_48"
+        layout="@layout/new_phone_reveal"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/ex_dp_48"
+        layout="@layout/new_phone_compelete"/>
+</com.userlabs.xshare.views.XConstraintLayout>

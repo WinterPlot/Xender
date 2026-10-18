@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/vp_selector_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/vp_dp_54"
+    android:textDirection="locale"
+    android:layoutDirection="locale">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:gravity="start|center_vertical"
+        android:id="@+id/vp_sleep_timer_tv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:maxLines="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/vp_BottomSheetDialog_Text_Select"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

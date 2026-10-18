@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.userlabs.xshare.views.X4W3HFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/social_play"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/social_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center"
+        android:id="@+id/social_video_play"
+        android:background="@drawable/bg_white_b3_oval"
+        android:layout_width="@dimen/x_dp_30"
+        android:layout_height="@dimen/x_dp_30"
+        android:src="@drawable/x_svg_ic_video_play"
+        android:scaleType="centerInside"
+        android:tint="@color/x_222_or_fff"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/xshare_text_size_smaller"
+        android:textColor="@color/txt_white"
+        android:gravity="center"
+        android:layout_gravity="end|bottom"
+        android:id="@+id/social_video_duration_tv"
+        android:background="@drawable/bg_duration"
+        android:paddingLeft="@dimen/x_dp_5"
+        android:paddingRight="@dimen/x_dp_5"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x_dp_16"
+        android:layout_marginBottom="4dp"
+        android:singleLine="true"
+        android:layout_marginEnd="4dp"
+        android:paddingHorizontal="@dimen/x_dp_5"/>
+</com.userlabs.xshare.views.X4W3HFrameLayout>

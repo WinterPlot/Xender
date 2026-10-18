@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/txt_search_layout"
+    android:background="@drawable/bg_window_2_color_round_corner"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/x_dp_16"
+        android:paddingRight="@dimen/x_dp_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/svg_search"
+        android:tint="@color/x_222_or_fff"
+        android:paddingHorizontal="@dimen/x_dp_16"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/xshare_text_size_medium"
+        android:textColor="@color/txt_secondary"
+        android:gravity="start|center_vertical"
+        android:id="@+id/common_search_et"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/x_dp_42"
+        android:text="@string/file_search_bar_hint"
+        android:layout_weight="1"
+        android:imeOptions="flagNoFullscreen|actionSearch"/>
+</LinearLayout>

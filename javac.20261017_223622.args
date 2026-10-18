@@ -1,0 +1,11 @@
+-XDrawDiagnostics
+-XDshould-stop.ifError=FLOW
+-proc:none
+-nowarn
+-Xmaxerrs
+1000000
+-Xmaxwarns
+0
+-d
+/tmp/claude-0/-home-claude/437991d6-493b-5616-8b8b-38666c349d55/scratchpad/g/cls
+@/tmp/claude-0/-home-claude/437991d6-493b-5616-8b8b-38666c349d55/scratchpad/g/files.txt

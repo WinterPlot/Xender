@@ -1,0 +1,9 @@
+package androidx.camera.core.impl;
+
+import java.util.List;
+
+/* JADX INFO: compiled from: r8-map-id-7c39405478b97556541940d8ec6ed68be9fb10fdbac58530bd0e41fdc7ed0e30 */
+/* JADX INFO: loaded from: classes.dex */
+public interface u1 {
+    void onCamerasUpdated(List<String> list) throws CameraUpdateException;
+}

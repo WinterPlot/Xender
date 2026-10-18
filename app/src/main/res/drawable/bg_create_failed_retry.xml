@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/primary"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/svg_send_fail_try_small"
+        android:left="@dimen/x_dp_10"
+        android:top="@dimen/x_dp_10"
+        android:right="@dimen/x_dp_10"
+        android:bottom="@dimen/x_dp_10"/>
+</layer-list>

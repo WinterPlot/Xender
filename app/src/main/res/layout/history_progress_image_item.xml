@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.userlabs.xshare.views.XSquareConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/history_progress_item_image_icon_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/history_progress_item_image_mask_iv"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <com.userlabs.xshare.views.SectorProgress
+        android:id="@+id/progress_image_progress_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</com.userlabs.xshare.views.XSquareConstraintLayout>

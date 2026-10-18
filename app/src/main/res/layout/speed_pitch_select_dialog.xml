@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textDirection="locale"
+    android:layoutDirection="locale">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:gravity="center"
+        android:id="@+id/speed_time_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x_dp_56"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/BottomSheetDialog_Title"/>
+    <View
+        android:id="@+id/speed_time_divider_line"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/speed_time_title"
+        style="@style/BottomSheetDialog_Line"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/speed_time_cancel"
+        android:background="@drawable/selector_list_item"
+        android:layout_width="@dimen/x_dp_56"
+        android:layout_height="@dimen/x_dp_56"
+        android:src="@drawable/svg_ic_cancel"
+        android:scaleType="center"
+        android:tint="@color/x_222_or_fff"
+        app:layout_constraintBottom_toBottomOf="@+id/speed_time_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/speed_time_title"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/speed_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@+id/speed_time_divider_line"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

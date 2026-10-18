@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:id="@+id/menu_add_layout"
+    android:background="?attr/actionBarItemBackground"
+    android:layout_width="@dimen/x_dp_48"
+    android:layout_height="@dimen/x_dp_48">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/menu_add_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:scaleType="fitXY"/>
+    <View
+        android:layout_gravity="end"
+        android:id="@+id/menu_add_item_red_dot"
+        android:visibility="gone"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"/>
+</FrameLayout>

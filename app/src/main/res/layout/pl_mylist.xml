@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textSize="@dimen/xshare_text_size_small"
+    android:textColor="@color/txt_secondary"
+    android:gravity="start|center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/pl_mylist_header"
+    android:background="@color/child_window_bg"
+    android:paddingLeft="@dimen/x_dp_16"
+    android:paddingRight="@dimen/x_dp_16"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x_dp_40"
+    android:textDirection="locale"
+    android:layoutDirection="locale"
+    android:paddingHorizontal="@dimen/x_dp_16"
+    app:slm_isHeader="true"
+    style="@style/bold_text_style"/>
