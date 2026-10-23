@@ -38,7 +38,8 @@ jobs:
 
       - name: Show compiler errors
         if: failure()
-        run: grep -nE "^e: |error:|FAILED|What went wrong" -A2 build.log | head -80
+        run: |
+          grep -nE "^e: |error:|FAILED|What went wrong" -A2 build.log | head -80
 
       - uses: actions/upload-artifact@v4
         if: always()
